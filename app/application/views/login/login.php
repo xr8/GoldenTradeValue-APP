@@ -39,12 +39,12 @@
         <h5 class="h5 mb-3 font-weight-normal mt-3">Inicia sesión para continuar</h5>
           
           <label for="inputEmail" class="sr-only">Email address</label>
-          <input name="email" type="email"    id="inputEmail"    class="form-control" placeholder="Email address" required autofocus>
+          <input name="LSf47vWou0wNVEsEuT1i" type="email"    id="inputEmail"    class="form-control" placeholder="Email address" required autofocus>
           
           <label for="inputPassword" class="sr-only">Password</label>
-          <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password"      required>
+          <input name="PHt0gjv8TbmLTQCWVB81" type="password" id="inputPassword" class="form-control" placeholder="Password"      required>
     
-            <div class="checkbox mb-3"><label><input type="checkbox" name="rememberme" value="rememberme">Recordarme.</label></div>
+            <div class="checkbox mb-3"><label><input type="checkbox" name="Mbv2GRxrFw8vMe1P5Pgo" value="rememberme">Recordarme.</label></div>
   
             <button class="btn btn-lg btn-primary btn-block" type="submit">Continuar</button>
               

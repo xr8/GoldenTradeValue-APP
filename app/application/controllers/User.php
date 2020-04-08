@@ -84,22 +84,29 @@
 
                 //$this->load->view('login/check',$data);
                 
-                $email      = $_POST['email'];
-                $password   = $_POST['password'];
+                //email
+                $LSf47vWou0wNVEsEuT1i = $_POST['LSf47vWou0wNVEsEuT1i'];
+                //passwword
+                $PHt0gjv8TbmLTQCWVB81 = $_POST['PHt0gjv8TbmLTQCWVB81'];
+                //remember
+                $Mbv2GRxrFw8vMe1P5Pgo = $_POST['Mbv2GRxrFw8vMe1P5Pgo'];
 
-                    if (!empty($_POST['rememberme'])) { // <= false
+                empty($_POST);
+                empty($_GET);
+
+                    if (!empty($Mbv2GRxrFw8vMe1P5Pgo)) { // <= false
                         // No está vacía (true)
                         $rememberme = True;
                         } else {
                             // Está vacía (false)
                             $rememberme = False;
                             }
-
-                        $data = $this->Querys->checkDatauser($email,$password,$rememberme);
+                
+                        $data = $this->Querys->checkDatauser($LSf47vWou0wNVEsEuT1i,$password,$rememberme);
                         //$this->output->set_content_type('application/json')->set_output(json_encode($data));  
                         
                         //----->
-                        if ($data[0]->email == $email and password_verify($password,$data[0]->password)) {
+                        if ($data[0]->email == $LSf47vWou0wNVEsEuT1i and password_verify($PHt0gjv8TbmLTQCWVB81,$data[0]->password)) {
                             /*
                             [
                                 {
@@ -131,25 +138,16 @@
                                 $_SESSION['Message']       = $data[0]->Message;
                                 $_SESSION['Time']          = date("Y-m-d H:m:s");
                                 
-                                if ($data[0]->permissions == "admin") {
-                                    
-                                    $url = site_url() . "/dashboard/admin/?sucess=101&since=".$since."&sha1=".$sha1;
-                                    header("Location: $url");
-                                    
-                                    }else {
+                                $url = site_url() . "/redirect";
+                                header("Location: $url");
                                         
-                                        $url = site_url() . "/dashboard/vendedor/?sucess=101&since=".$since."&sha1=".$sha1;
-                                        header("Location: $url");
-
-                                        }   
-
-
                             }else{
                                 
                                 $url = site_url() . "/user/login?error=102&since=".$since."&sha1=".$sha1;
                                 header("Location: $url");
 
                                 }
+
                         //----->
 
                 }
