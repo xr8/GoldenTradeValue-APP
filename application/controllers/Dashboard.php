@@ -23,10 +23,20 @@ class Dashboard extends CI_Controller {
 
     //--->
     public function admin(){     
-        echo "ssx";
+        
+        $sha1  = random_string('sha1', 16);
+        $data['sha1']           = $sha1;
+        
+        $data['page_title']     = "";
+        $data['sub_page_title'] = 'Reg&iacute;strate';
+        $data['css']            = 'login';
+        $data['js']             = 'login';
+
+        $data['singout']        = INDEX_PAGE . "user/logout?error=102&since=".$_GET['since']."&sha1=".$sha1; 
+
         session_check();              
-        echo "admin";
-        print_r($_SESSION);
+        $this->load->view('dashboard/admin',$data);
+
         }
     //--->
 

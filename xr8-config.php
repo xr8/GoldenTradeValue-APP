@@ -65,14 +65,14 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
         //----->
           define("TITLE", PAGETITLE ." Money offline - ");
 
-          define("BASE_URL", '//'.$_SERVER['HTTP_HOST'].'/server/money/app/');
+          define("BASE_URL", '//'.$_SERVER['HTTP_HOST'].'/server/DevOps/GoldenTradeValue/');
                 
-            define("APP_URL",BASE_URL."app/");
-            define("API_URL",BASE_URL."api/");
-            define("CDN_URL",BASE_URL."cdn/");
+            define("APP_URL",BASE_URL."GoldenTradeValue-APP/");
+            define("API_URL",BASE_URL."GoldenTradeValue-API/");
+            define("CDN_URL",BASE_URL."GoldenTradeValue-CDN/app/");
 
-            define("INDEX_PAGE", 'index.php');
-            define("DEFAULTROUTER", 'user');
+            define("INDEX_PAGE", APP_URL.'index.php/');
+            define("DEFAULTROUTER", 'user/login');
 
             define("HOSTNAME", 'labs26.com');
             define("USERNAME", 'labs26');
@@ -83,14 +83,14 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
           //----->
             define("TITLE", PAGETITLE ." Money ngrok - ");
 
-            define("BASE_URL", '//'.$_SERVER['HTTP_HOST'].'/server/money/app/');
+            define("BASE_URL", '//'.$_SERVER['HTTP_HOST'].'/server/DevOps/GoldenTradeValue/');
             
-              define("APP_URL",BASE_URL."app/");
-              define("API_URL",BASE_URL."api/");
-              define("CDN_URL",BASE_URL."cdn/");
+              define("APP_URL",BASE_URL."GoldenTradeValue-APP/");
+              define("API_URL",BASE_URL."GoldenTradeValue-API/");
+              define("CDN_URL",BASE_URL."GoldenTradeValue-CDN/app/");
     
-              define("INDEX_PAGE", 'index.php');
-              define("DEFAULTROUTER", 'user');
+              define("INDEX_PAGE", APP_URL.'index.php/');
+              define("DEFAULTROUTER", 'user/login');
 
               define("HOSTNAME", 'labs26.com');
               define("USERNAME", 'labs26');
@@ -107,8 +107,8 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
                 define("API_URL",BASE_URL."api/");
                 define("CDN_URL",BASE_URL."cdn/");
       
-                define("INDEX_PAGE", 'index.php');
-                define("DEFAULTROUTER", 'user');
+                define("INDEX_PAGE", APP_URL.'index.php/');
+                define("DEFAULTROUTER", 'user/login');
 
                 define("HOSTNAME", 'labs26.com');
                 define("USERNAME", 'labs26');

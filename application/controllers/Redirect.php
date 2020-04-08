@@ -14,14 +14,13 @@ class Redirect extends CI_Controller {
 
     //--->
     public function index(){       
-        session_start();
-        
+        session_start();      
         
         if ($_SESSION['Permissions'] == "admin") {
-            $url = site_url() . "/dashboard/admin/?sucess=101&since=".$since."&sha1=".$sha1;
+            $url = INDEX_PAGE . "dashboard/admin/?sucess=101&since=".$since."&sha1=".$sha1;
             header("Location: $url");
             }else {
-                $url = site_url() . "/dashboard/vendedor/?sucess=101&since=".$since."&sha1=".$sha1;
+                $url = INDEX_PAGE . "dashboard/vendedor/?sucess=101&since=".$since."&sha1=".$sha1;
                 header("Location: $url");
                 }                
         

@@ -15,24 +15,19 @@
         //--->
         public function index(){       
 
+
             $sha1  = random_string('sha1', 16);
-            $since = "user";
+            $data['sha1']            = $sha1;
+            $data['page_title']      = "";
+            $data['sub_page_title']  = 'User';
+            $data['sub_page_title2'] = 'Login';
+            $data['css']             = 'user';
+            $data['js']              = 'user';
 
-            $data['sha1']           = $sha1;
-            $data['page_title']     = "";
-            $data['sub_page_title'] = 'Reg&iacute;strate';
-            $data['css']            = 'login';
-            $data['js']             = 'login';
-
-            session_check($since,$sha1);
-            $data['user'] = $_SESSION;
-
-            $this->load->view('login/user',$data);
-            
-            $logout = base_url() . "user/logout?error=102&since=".$since."&sha1=".$sha1;
-            echo "login ok";
-            echo "<a href=".$logout.">logout</a>";
-            
+            $this->load->view('loop/header',$data);
+                $this->load->view('login/user',$data);
+            $this->load->view('loop/footer',$data);
+                        
             }
         //--->
 
@@ -41,37 +36,44 @@
             public function login(){       
 
                 $sha1  = random_string('sha1', 16);
-                $data['sha1']           = $sha1;
-                $data['page_title']     = "";
-                $data['sub_page_title'] = 'Reg&iacute;strate';
-                $data['css']            = 'login';
-                $data['js']             = 'login';
+                $data['sha1']            = $sha1;
+                $data['page_title']      = "";
+                $data['sub_page_title']  = 'User';
+                $data['sub_page_title2'] = 'Login';
+                $data['css']             = 'login';
+                $data['js']              = 'login';
 
-                $this->load->view('login/login',$data);
-
+                $this->load->view('loop/header',$data);
+                    $this->load->view('login/login',$data);
+                $this->load->view('loop/footer',$data);
                 }
             //--->
+            
             //--->
             public function logout(){       
 
                 $sha1  = random_string('sha1', 16);
-                $data['sha1']           = $sha1;
-                $data['page_title']     = "";
-                $data['sub_page_title'] = 'Reg&iacute;strate';
-                $data['css']            = 'login';
-                $data['js']             = 'login';
+                $data['sha1']            = $sha1;
+                $data['page_title']      = "";
+                $data['sub_page_title']  = 'User';
+                $data['sub_page_title2'] = 'Logout';
+                $data['css']             = 'logout';
+                $data['js']              = 'logout';
 
-                $this->load->view('login/logout',$data);
+                $this->load->view('loop/header',$data);
+                    $this->load->view('login/logout',$data);
+                $this->load->view('loop/footer',$data);
 
                 session_start();
                 session_destroy();
 
-                $url = site_url() . "/user/login?error=102&since=".$since."&sha1=".$sha1;
+                $url = INDEX_PAGE . "user/login?error=102&since=".$since."&sha1=".$sha1;
                 header("Location: $url");
 
 
                 }
             //--->
+
             //--->
             public function check(){       
 
@@ -138,17 +140,30 @@
                                 $_SESSION['Message']       = $data[0]->Message;
                                 $_SESSION['Time']          = date("Y-m-d H:m:s");
                                 
-                                $url = site_url() . "/redirect";
+                                $url = INDEX_PAGE . "/redirect";
                                 header("Location: $url");
                                         
                             }else{
                                 
-                                $url = site_url() . "/user/login?error=102&since=".$since."&sha1=".$sha1;
+                                $url = INDEX_PAGE . "user/login?error=102&since=".$since."&sha1=".$sha1;
                                 header("Location: $url");
 
                                 }
 
                         //----->
+
+                }
+            //--->
+
+            //--->
+            public function password(){       
+
+                $sha1  = random_string('sha1', 16);
+                $data['sha1']           = $sha1;
+                $data['page_title']     = "";
+                $data['sub_page_title'] = 'Reg&iacute;strate';
+                $data['css']            = 'login';
+                $data['js']             = 'login';
 
                 }
             //--->
