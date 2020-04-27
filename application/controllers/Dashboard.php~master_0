@@ -1,0 +1,53 @@
+<?php
+class Dashboard extends CI_Controller {
+//----->
+
+    //--->
+    public function __construct(){
+        parent::__construct();
+        // Your own constructor code
+        $this->load->database();
+        $this->default= $this->load->database('default', TRUE);
+
+        }
+    //--->
+
+    //--->
+    public function index(){  
+        echo "ssx";
+        session_check();    
+        echo "all";
+        print_r($_SESSION);
+        }
+    //--->
+
+    //--->
+    public function admin(){     
+        
+        $sha1  = random_string('sha1', 16);
+        $data['sha1']           = $sha1;
+        
+        $data['page_title']     = "";
+        $data['sub_page_title'] = 'Reg&iacute;strate';
+        $data['css']            = 'login';
+        $data['js']             = 'login';
+
+        $data['singout']        = APP_URL . "user/logout?error=102&since=".$_GET['since']."&sha1=".$sha1; 
+
+        session_check();              
+        $this->load->view('dashboard/admin',$data);
+
+        }
+    //--->
+
+    //--->
+    public function vendedor(){    
+        echo "ssx";
+        session_check();               
+        echo "vendedor";
+        print_r($_SESSION);
+        }
+    //--->
+
+//----->
+}
