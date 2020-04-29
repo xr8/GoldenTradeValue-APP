@@ -10,6 +10,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo CDN_URL;?>libs/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo CDN_URL;?>css/all.css"       rel="stylesheet">
     <link href="<?php echo CDN_URL;?>css/<?php echo $css;?>.css"       rel="stylesheet">
     
   </head>
