@@ -16,7 +16,7 @@ class Redirect extends CI_Controller {
     public function index(){       
         session_start();      
         
-        if ($_SESSION['Permissions'] == "admin") {
+        if ($_SESSION['Permissions'] == "administrador") {
             $url = INDEX_PAGE . "dashboard/admin/?sucess=101&since=".$since."&sha1=".$sha1;
             header("Location: $url");
             }else {
