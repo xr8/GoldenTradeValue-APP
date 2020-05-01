@@ -103,9 +103,9 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
 
               define("BASE_URL", 'gtvsa.com');
               
-                define("APP_URL","//:app.".BASE_URL."/");
-                define("API_URL","//:api.".BASE_URL."/");
-                define("CDN_URL","//:cdn.".BASE_URL."/");
+                define("APP_URL","//app.".BASE_URL."/");
+                define("API_URL","//api.".BASE_URL."/");
+                define("CDN_URL","//cdn.".BASE_URL."/");
       
                 define("INDEX_PAGE", APP_URL.'');
                 define("DEFAULTROUTER", 'user/login');

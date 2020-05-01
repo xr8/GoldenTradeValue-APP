@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author"      content="">
     <meta name="generator"   content="">
-    <title>Golden Trade Value/ <?php echo $sub_page_title;?>/ <?php echo $sub_page_title2;?></title>
+    <title><?php echo TITLE;?>/<?php echo $sub_page_title;?>/ <?php echo $sub_page_title2;?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo CDN_URL;?>libs/bootstrap/css/bootstrap.css" rel="stylesheet">
