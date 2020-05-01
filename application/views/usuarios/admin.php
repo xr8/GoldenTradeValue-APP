@@ -22,8 +22,6 @@
 </div>
 
 
-
-
 <!-- Modal NEW -->
 <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -183,6 +181,34 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary"  id="btnUpdateUser">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal DELETE -->
+<div class="modal fade " id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Usuarios Borrar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+
+          <h5>Lorem ipsum dolor. </br>
+          Usuarios:  <span id="usuariodelete" class="text-danger"></span></br>
+          Nombre:    <span id="nombredelete"  class="text-danger"></span></br>
+          sit amet consectetur adipisicing elit!</h5>
+
+        </form>                
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger"  id="btnDeleteUser">Delete user</button>
       </div>
     </div>
   </div>

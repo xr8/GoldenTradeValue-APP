@@ -62,6 +62,7 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
 
 //Config Local o Web
       if (ZONA == "local") {
+
         //----->
           define("TITLE", PAGETITLE ." Money offline - ");
 
@@ -79,7 +80,9 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
             define("PASSWORD", '12345aeiou');
             define("DATABASE", 'labs26');
         //----->
+
         }else if  (ZONA == "ngrok"){
+
           //----->
             define("TITLE", PAGETITLE ." Money ngrok - ");
 
@@ -97,7 +100,9 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
               define("PASSWORD", '12345aeiou');
               define("DATABASE", 'labs26');
           //----->
+
           }else{
+
             //----->
               define("TITLE", PAGETITLE ." Golden Trade Value - ");
 
@@ -114,5 +119,6 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
                 define("USERNAME", 'labs26');
                 define("PASSWORD", '12345aeiou');
                 define("DATABASE", 'labs26');
-            //----->              
+            //----->      
+                    
             }
