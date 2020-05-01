@@ -99,7 +99,7 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
           //----->
           }else{
             //----->
-              define("TITLE", PAGETITLE ." Money online - ");
+              define("TITLE", PAGETITLE ." Golden Trade Value - ");
 
               define("BASE_URL", 'gtvsa.com');
               
