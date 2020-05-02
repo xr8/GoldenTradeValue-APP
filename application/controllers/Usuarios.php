@@ -26,17 +26,22 @@ class Usuarios extends CI_Controller {
 
         session_check();              
 
-        $this->load->view('loop/header',$data);
-            
+        $this->load->view('loop/header',$data);            
             $this->load->view('loop/top',$data);
-            
                 $this->load->view('loop/admin-top',$data);
                     
+                //--->
                 $this->load->view('usuarios/top',$data);    
-                $this->load->view('usuarios/admin',$data);   
+
+                    //--->CRUD
+                    $this->load->view('usuarios/reader',$data);   
+                    $this->load->view('usuarios/modalnew.php',$data);
+                    $this->load->view('usuarios/modalupdate.php',$data);
+                    $this->load->view('usuarios/modaldelete.php',$data);
+                    //--->CRUD
+                //--->
 
                 $this->load->view('loop/admin-foot',$data);
-
         $this->load->view('loop/footer',$data);
 
         }
