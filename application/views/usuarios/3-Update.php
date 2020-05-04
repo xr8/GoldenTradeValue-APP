@@ -35,12 +35,13 @@
           </div>
 
           <div class="form-group">
-            <label for="updateInputPermiso">Permiso</label>
+            <label for="updateInputPermiso">Permiso</label>                                  
             <select class="custom-select d-block w-100" required="" class="form-control" id="updateInputPermiso" aria-describedby="permisoHelp">>
               <option value=""              class="text-uppercase">- Seleccionar -</option>
               <option value="administrador" class="text-uppercase">  administrador</option>
               <option value="supervisor"    class="text-uppercase">  supervisor</option>
               <option value="vendedor"      class="text-uppercase">  vendedor</option>
+              <option value="mantenimiento" class="text-uppercase">  mantenimiento</option>
               </select>          
             <small id="permisoHelp" class="form-text text-muted">Permiso para el manejo del sistema.</small>
           </div>
@@ -69,7 +70,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary text-capitalize"   data-dismiss="modal">cerrar ventana</button>
-        <button type="button" class="btn btn-primary   text-capitalize"     id="btnUpdateUser">actualizr usuario</button>
+        <button type="button" class="btn btn-primary   text-capitalize"   id="btnUpdateUser">actualizar usuario</button>
       </div>        
       </div>
     </div>

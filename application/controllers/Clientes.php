@@ -1,5 +1,5 @@
 <?php
-class Usuarios extends CI_Controller {
+class Clientes extends CI_Controller {
 //----->
 
     //--->
@@ -19,8 +19,8 @@ class Usuarios extends CI_Controller {
         
         $data['page_title']     = "";
         $data['sub_page_title'] = 'Reg&iacute;strate';
-        $data['css']            = 'usuarios';
-        $data['js']             = 'usuarios';
+        $data['css']            = 'clientes';
+        $data['js']             = 'clientes';
 
         $data['singout']        = INDEX_PAGE . "user/logout?error=102&since=".$_GET['since']."&sha1=".$sha1; 
 
@@ -31,13 +31,13 @@ class Usuarios extends CI_Controller {
                 $this->load->view('loop/admin-top',$data);
                     
                 //--->
-                $this->load->view('usuarios/0-top.php',$data);    
+                $this->load->view('clientes/0-top.php',$data);    
 
                     //--->CRUD
-                    $this->load->view('usuarios/1-Create.php',$data);   
-                    $this->load->view('usuarios/2-Read.php',$data);
-                    $this->load->view('usuarios/3-Update.php',$data);
-                    $this->load->view('usuarios/4-Delete.php',$data);
+                    $this->load->view('clientes/1-Create.php',$data);   
+                    $this->load->view('clientes/2-Read.php',$data);
+                    $this->load->view('clientes/3-Update.php',$data);
+                    $this->load->view('clientes/4-Delete.php',$data);
                     //--->CRUD
                 //--->
 

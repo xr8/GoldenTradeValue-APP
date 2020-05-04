@@ -3,7 +3,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">GoldenTradeValue - Usuarios Nuevos</h5>
+        <h5 class="modal-title" id="exampleModalLabel">GoldenTradeValue - Cientes Nuevos</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -38,35 +38,6 @@
           </div>
 
           <div class="form-group">
-            <label for="exampleInputUsuario">Usuario</label>
-            <input type="text" class="form-control" id="exampleInputUsuario" aria-describedby="usuarioHelp">
-            <small id="usuarioHelp" class="form-text text-muted">Usuario min 8 caracteres Alfanumericos A-Z a-z 1-0.</small>
-          </div>
-
-          <div class="form-group">
-            <label for="exampleInputPassword">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="passwordHelp">
-            <small id="emailHelp" class="form-text text-muted">Password min 8 caracteres Alfanumericos A-Z a-z 1-0.</small>
-          </div>
-
-          <div class="form-group">
-            <label for="exampleInputPermiso">Permiso</label>
-            <select class="custom-select d-block w-100" required="" class="form-control" id="exampleInputPermiso" aria-describedby="permisoHelp">>
-                <option value=""              class="text-uppercase">- Seleccionar -</option>
-                <option value="administrador" class="text-uppercase">  administrador</option>
-                <option value="supervisor"    class="text-uppercase">  supervisor</option>
-                <option value="vendedor"      class="text-uppercase">  vendedor</option>
-              </select>          
-            <small id="permisoHelp" class="form-text text-muted">Permiso para el manejo del sistema.</small>
-          </div>
-
-          <div class="form-group">
-            <label for="exampleInputPuesto">puesto de trabajo.</label>
-            <input type="text" class="form-control" id="exampleInputPuesto" aria-describedby="puestoHelp">
-            <small id="puestoHelp" class="form-text text-muted">Puesto de trabajo ejemplo vendedor, supervisor, mantenimiento.</small>
-          </div>
-
-          <div class="form-group">
             <label for="exampleInputEmail">Email</label>
             <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
             <small id="emailHelp" class="form-text text-muted">Email ejemplo usuario@gmai.com recuerda el email se ocupará para recuperación del password.</small>
@@ -82,7 +53,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary text-capitalize" data-dismiss="modal">cerrar ventana</button>
-        <button type="button" class="btn btn-success   text-capitalize"   id="b-nuew-user">guardar usuario</button>
+        <button type="button" class="btn btn-success   text-capitalize"     id="b-nuew-user">guardar cliente</button>
       </div>
     </div>
   </div>
