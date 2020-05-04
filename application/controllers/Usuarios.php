@@ -31,6 +31,7 @@ class Usuarios extends CI_Controller {
                 $this->load->view('loop/admin-top',$data);
                     
                 //--->
+<<<<<<< HEAD
                 $this->load->view('usuarios/0-top.php',$data);    
 
                     //--->CRUD
@@ -38,6 +39,15 @@ class Usuarios extends CI_Controller {
                     $this->load->view('usuarios/2-Read.php',$data);
                     $this->load->view('usuarios/3-Update.php',$data);
                     $this->load->view('usuarios/4-Delete.php',$data);
+=======
+                $this->load->view('usuarios/top',$data);    
+
+                    //--->CRUD
+                    $this->load->view('usuarios/reader',$data);   
+                    $this->load->view('usuarios/modalnew.php',$data);
+                    $this->load->view('usuarios/modalupdate.php',$data);
+                    $this->load->view('usuarios/modaldelete.php',$data);
+>>>>>>> master
                     //--->CRUD
                 //--->
 
