@@ -14,8 +14,6 @@
 
         //--->
         public function index(){       
-
-
             $sha1  = random_string('sha1', 16);
             $data['sha1']            = $sha1;
             $data['page_title']      = "";
@@ -26,15 +24,13 @@
 
             $this->load->view('loop/header',$data);
                 $this->load->view('login/user',$data);
-            $this->load->view('loop/footer',$data);
-                        
+            $this->load->view('loop/footer',$data);      
             }
         //--->
 
         ### LOGIN ###
             //--->
             public function login(){       
-
                 $sha1  = random_string('sha1', 16);
                 $data['sha1']            = $sha1;
                 $data['page_title']      = "";
@@ -51,7 +47,6 @@
             
             //--->
             public function logout(){       
-
                 $sha1  = random_string('sha1', 16);
                 $data['sha1']            = $sha1;
                 $data['page_title']      = "";
@@ -69,14 +64,11 @@
 
                 $url = INDEX_PAGE . "user/login?error=102&since=".$since."&sha1=".$sha1;
                 header("Location: $url");
-
-
                 }
             //--->
 
             //--->
             public function check(){       
-
                 $sha1  = random_string('sha1', 16);
                 $data['sha1']           = $sha1;
                 $data['page_title']     = "";
@@ -151,20 +143,22 @@
                                 }
 
                         //----->
-
                 }
             //--->
 
             //--->
             public function password(){       
-
                 $sha1  = random_string('sha1', 16);
-                $data['sha1']           = $sha1;
-                $data['page_title']     = "";
-                $data['sub_page_title'] = 'Reg&iacute;strate';
-                $data['css']            = 'login';
-                $data['js']             = 'login';
+                $data['sha1']            = $sha1;
+                $data['page_title']      = "";
+                $data['sub_page_title']  = 'User';
+                $data['sub_page_title2'] = 'Login';
+                $data['css']             = 'login';
+                $data['js']              = 'login';
 
+                $this->load->view('loop/header',$data);
+                    $this->load->view('login/lost',$data);
+                $this->load->view('loop/footer',$data);
                 }
             //--->
         ### LOGIN ###            
