@@ -1,5 +1,2 @@
-</main>
-
-
-  </div>
 </div>
+   <!-- End: Right + -->      
