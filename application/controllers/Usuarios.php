@@ -26,10 +26,17 @@ class Usuarios extends CI_Controller {
 
         session_check();              
 
-        $this->load->view('loop/header',$data);            
-            $this->load->view('loop/top',$data);
-                $this->load->view('loop/admin-top',$data);
+
                     
+
+
+
+                $this->load->view('loop/header',$data);
+            
+                $this->load->view('loop/top',$data);
+                
+                    $this->load->view('loop/admin-top',$data);
+    
                 //--->
                 $this->load->view('usuarios/0-top.php',$data);    
 
@@ -41,9 +48,10 @@ class Usuarios extends CI_Controller {
 
                     //--->CRUD
                 //--->
-
-                $this->load->view('loop/admin-foot',$data);
-        $this->load->view('loop/footer',$data);
+    
+                    $this->load->view('loop/admin-foot',$data);
+    
+            $this->load->view('loop/footer',$data);
 
         }
     //--->
