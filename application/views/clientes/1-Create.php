@@ -9,7 +9,7 @@
         </button>
       </div>
       <div class="modal-body">
-      <!--
+        <!--
       /*
                 'id_advance' => random_string('sha1', 20),
                 'time'       => date("Y-m-d H:m:s"),
@@ -25,6 +25,26 @@
       -->
 
         <form>
+          <h3>Razon Social</h3>
+          <div class="form-group">
+            <label for="exampleInputRfc">RFC</label>
+            <input type="text" class="form-control" id="exampleInputRfc1" aria-describedby="rfcHelp">
+            <small id="rfcHelp" class="form-text text-muted">R.F.C.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPais">Pais</label>
+            <input type="text" class="form-control" id="exampleInputPais1" aria-describedby="paisHelp">
+            <small id="paisHelp" class="form-text text-muted">Pais </small>
+          </div>
+          
+          <div class="form-group">
+            <label for="exampleInputgiro">Giro Mercantil</label>
+            <input type="text" class="form-control" id="exampleInputgiro1" aria-describedby="giroHelp">
+            <small id="giroHelp" class="form-text text-muted">Giro Mercantil </small>
+          </div>
+
+          <h3>Representante Legal</h3>
           <div class="form-group">
             <label for="exampleInputNombre">Nombre (s)</label>
             <input type="text" class="form-control" id="exampleInputNombre" aria-describedby="nombreHelp">
@@ -48,12 +68,32 @@
             <input type="text" class="form-control" id="exampleInputTelefono" aria-describedby="telefonoHelp">
             <small id="telefonoHelp" class="form-text text-muted">Telefono ejemplo 55 1050 2040</small>
           </div>
-        </form>   
+
+          <div class="form-group">
+            <label for="exampleInputRfc">R.F.C</label>
+            <input type="text" class="form-control" id="exampleInputRfc" aria-describedby="rfcHelp">
+            <small id="rfcHelp" class="form-text text-muted">RFC</small>
+          </diV>
+
+          <div class="form-group">
+            <label for="exampleInputCurp">C.U.R.P</label>
+            <input type="text" class="form-control" id="exampleInputCurp" aria-describedby="curpHelp">
+            <small id="curpHelp" class="form-text text-muted">CURP</small>
+          </diV>
+
+          <div class="form-group">
+            <label for="exampleInputDireccion">Direccion</label>
+            <input type="text" class="form-control" id="exampleInputDireccion" aria-describedby="direccionHelp">
+            <small id="direccionHelp" class="form-text text-muted">Direccion</small>
+          </diV>
+
+
+        </form>
 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary text-capitalize" data-dismiss="modal">cerrar ventana</button>
-        <button type="button" class="btn btn-success   text-capitalize"     id="b-nuew-user">guardar cliente</button>
+        <button type="button" class="btn btn-success   text-capitalize" id="b-nuew-user">guardar cliente</button>
       </div>
     </div>
   </div>
