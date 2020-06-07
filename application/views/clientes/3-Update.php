@@ -11,6 +11,13 @@
       <div class="modal-body">
       <form>
           <h3>Razon Social</h3>
+
+          <div class="form-group">
+            <label for="exampleInputFecha">Fecha de constitución</label>
+            <input type="date" class="form-control" id="updateInputFecha1" aria-describedby="fechaHelp">
+            <small id="fechaHelp" class="form-text text-muted">Fecha de constitución</small>
+          </div>
+                    
           <div class="form-group">
             <label for="updateInputRfc">RFC</label>
             <input type="text" class="form-control" id="updateInputRfc1" aria-describedby="rfcHelp">

@@ -1,5 +1,5 @@
 <!-- Modal NEW -->
-<div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade " id="createModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -26,6 +26,14 @@
 
         <form>
           <h3>Razon Social</h3>
+
+          <div class="form-group">
+            <label for="exampleInputFecha">Fecha de constitución</label>
+            <input type="date" class="form-control" id="exampleInputFecha1" aria-describedby="fechaHelp">
+            <small id="fechaHelp" class="form-text text-muted">Fecha de constitución</small>
+          </div>
+
+
           <div class="form-group">
             <label for="exampleInputRfc">RFC</label>
             <input type="text" class="form-control" id="exampleInputRfc1" aria-describedby="rfcHelp">

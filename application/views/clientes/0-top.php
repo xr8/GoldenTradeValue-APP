@@ -1,12 +1,14 @@
       
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">Clientes</h1>
+        
         <div class="btn-toolbar mb-2 mb-md-0">
+
           <div class="btn-group mr-2">
           <!-- CRUD -->
-            <button type="button" class="btn btn-sm btn-outline-secondary" id="user-"       data-toggle="modal" data-target="#exampleModal">Nuevo</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary" id="user-update" data-toggle="modal" data-target="#updateModal">Actualizar</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary" id="user-delete" data-toggle="modal" data-target="#deleteModal">Borrar</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary" id="user-create" data-toggle="modal" data-target="#createModal">Nuevo</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary" id="user-update" data-toggle="modal" data-target="#updateModal" >Actualizar</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary" id="user-delete" data-toggle="modal" data-target="#deleteModal" >Borrar</button>
           </div>
           <!--
           <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
@@ -15,10 +17,12 @@
           </button>
           -->
         </div>
+
       </div>
 
       <div class="col-10 offset-1 text-right py-3">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary p-1">Resumen</button>
+        <!-- Large modal -->
+        <button type="button" class="btn btn-primary" id="user-resume" data-toggle="modal" data-target=".bd-example-modal-lg" disabled>Resumen</button>
+
         <input type="hidden" id="iduserupdate">
       </div>      
