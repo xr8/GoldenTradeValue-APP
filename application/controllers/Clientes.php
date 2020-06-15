@@ -36,10 +36,10 @@ class Clientes extends CI_Controller
         $this->load->view('clientes/0-top.php', $data);
 
         //--->CRUD
-        $this->load->view('clientes/1-Create.php' , $data);
-        $this->load->view('clientes/2-Read.php'   , $data);
-        $this->load->view('clientes/3-Update.php' , $data);
-        $this->load->view('clientes/4-Delete.php' , $data);
+        $this->load->view('clientes/1-Create.php', $data);
+        $this->load->view('clientes/2-Read.php', $data);
+        $this->load->view('clientes/3-Update.php', $data);
+        $this->load->view('clientes/4-Delete.php', $data);
         $this->load->view('clientes/5-Resumen.php', $data);
         //--->CRUD
         //--->

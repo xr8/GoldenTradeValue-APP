@@ -85,9 +85,6 @@
                 //remember
                 $Mbv2GRxrFw8vMe1P5Pgo = $_POST['Mbv2GRxrFw8vMe1P5Pgo'];
 
-                empty($_POST);
-                empty($_GET);
-
                     if (!empty($Mbv2GRxrFw8vMe1P5Pgo)) { // <= false
                         // No está vacía (true)
                         $rememberme = True;

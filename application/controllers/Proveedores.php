@@ -36,10 +36,10 @@ class Proveedores extends CI_Controller
         $this->load->view('proveedores/0-top.php', $data);
 
         //--->CRUD
-        $this->load->view('proveedores/1-Create.php' , $data);
-        $this->load->view('proveedores/2-Read.php'   , $data);
-        $this->load->view('proveedores/3-Update.php' , $data);
-        $this->load->view('proveedores/4-Delete.php' , $data);
+        $this->load->view('proveedores/1-Create.php', $data);
+        $this->load->view('proveedores/2-Read.php', $data);
+        $this->load->view('proveedores/3-Update.php', $data);
+        $this->load->view('proveedores/4-Delete.php', $data);
         $this->load->view('proveedores/5-Resumen.php', $data);
         //--->CRUD
         //--->
