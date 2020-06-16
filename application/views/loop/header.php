@@ -12,6 +12,7 @@
     
     <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo CDN_URL;?>css/open-iconic-master/open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
     <link href="<?php echo CDN_URL;?>css/all.css"       rel="stylesheet">
     <link href="<?php echo CDN_URL;?>css/<?php echo $css;?>.css"       rel="stylesheet">
   </head>
