@@ -1,0 +1,32 @@
+INFO - 2020-06-18 11:08:04 --> Config Class Initialized
+INFO - 2020-06-18 11:08:04 --> Hooks Class Initialized
+INFO - 2020-06-18 11:08:04 --> UTF-8 Support Enabled
+INFO - 2020-06-18 11:08:04 --> Utf8 Class Initialized
+INFO - 2020-06-18 11:08:04 --> URI Class Initialized
+INFO - 2020-06-18 11:08:04 --> Router Class Initialized
+INFO - 2020-06-18 11:08:04 --> Output Class Initialized
+INFO - 2020-06-18 11:08:04 --> Security Class Initialized
+INFO - 2020-06-18 11:08:04 --> Input Class Initialized
+INFO - 2020-06-18 11:08:04 --> Language Class Initialized
+INFO - 2020-06-18 11:08:04 --> Loader Class Initialized
+INFO - 2020-06-18 11:08:04 --> Helper loaded: url_helper
+INFO - 2020-06-18 11:08:04 --> Helper loaded: string_helper
+INFO - 2020-06-18 11:08:04 --> Helper loaded: date_helper
+INFO - 2020-06-18 11:08:04 --> Helper loaded: array_helper
+INFO - 2020-06-18 11:08:04 --> Helper loaded: security_helper
+INFO - 2020-06-18 11:08:04 --> Helper loaded: text_helper
+INFO - 2020-06-18 11:08:04 --> Helper loaded: session_helper
+INFO - 2020-06-18 11:08:04 --> Controller Class Initialized
+INFO - 2020-06-18 11:08:04 --> Database Driver Class Initialized
+INFO - 2020-06-18 11:08:05 --> Database Driver Class Initialized
+ERROR - 2020-06-18 11:08:05 --> Severity: Notice --> Undefined variable: sub_page_title2 D:\Server\DevOps\GoldenTradeValue\GoldenTradeValue-APP\application\views\loop\header.php 9
+INFO - 2020-06-18 11:08:05 --> File loaded: D:\Server\DevOps\GoldenTradeValue\GoldenTradeValue-APP\application\views\loop/header.php
+INFO - 2020-06-18 11:08:05 --> File loaded: D:\Server\DevOps\GoldenTradeValue\GoldenTradeValue-APP\application\views\loop/top.php
+INFO - 2020-06-18 11:08:05 --> File loaded: D:\Server\DevOps\GoldenTradeValue\GoldenTradeValue-APP\application\views\loop/admin-top.php
+INFO - 2020-06-18 11:08:05 --> File loaded: D:\Server\DevOps\GoldenTradeValue\GoldenTradeValue-APP\application\views\caja/0-top.php
+INFO - 2020-06-18 11:08:05 --> File loaded: D:\Server\DevOps\GoldenTradeValue\GoldenTradeValue-APP\application\views\caja/1-Create.php
+INFO - 2020-06-18 11:08:05 --> File loaded: D:\Server\DevOps\GoldenTradeValue\GoldenTradeValue-APP\application\views\caja/2-Read.php
+INFO - 2020-06-18 11:08:05 --> File loaded: D:\Server\DevOps\GoldenTradeValue\GoldenTradeValue-APP\application\views\loop/admin-foot.php
+INFO - 2020-06-18 11:08:05 --> File loaded: D:\Server\DevOps\GoldenTradeValue\GoldenTradeValue-APP\application\views\loop/footer.php
+INFO - 2020-06-18 11:08:05 --> Final output sent to browser
+INFO - 2020-06-18 11:08:05 --> Total execution time: 1.6321
