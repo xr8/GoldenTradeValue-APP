@@ -30,8 +30,8 @@
         <button type="button" class="btn btn-primary" id="user-resume" data-toggle="modal" data-target=".bd-example-modal-lg" disabled>Resumen</button>
 
         
-        <input type="text" id="saldoinicial" placeholder="Saldo Inicial"            value="" disabled>
-        <input type="text" id="saldofinal"   placeholder="Saldo Final"              value="" disabled>
-        <input type="text" id="ultimafecha"  placeholder="Ultima Fecha de Registro" value="" disabled>
-        
+        <input type="hidde" id="saldoinicial" placeholder="Saldo Inicial"            value="" disabled>
+        <input type="hidde" id="saldofinal"   placeholder="Saldo Final"              value="" disabled>
+        <input type="hidde" id="ultimafecha"  placeholder="Ultima Fecha de Registro" value="" disabled>
+
       </div>      
