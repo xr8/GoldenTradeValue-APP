@@ -28,7 +28,7 @@
       <div class="col-10 offset-1 text-right py-3">
         <!-- Large modal -->
         <button type="button" class="btn btn-primary" id="user-resume" data-toggle="modal" data-target=".bd-example-modal-lg" disabled>Resumen</button>
-        <button type="button" class="btn btn-success d-none" id="ticket-print" data-toggle="modal" data-target=".bd-example-modal-lg">Ticket</button>
+
         
         <input type="hidden" id="saldoinicial" placeholder="Saldo Inicial"            value="" disabled>
         <input type="hidden" id="saldofinal"   placeholder="Saldo Final"              value="" disabled>
