@@ -1,8 +1,7 @@
 <?php
 class Proveedores extends CI_Controller
 {
-    //----->
-
+//----->
     //--->
     public function __construct()
     {
@@ -10,6 +9,8 @@ class Proveedores extends CI_Controller
         // Your own constructor code
         $this->load->database();
         $this->default = $this->load->database('default', TRUE);
+
+        session_check();
     }
     //--->
 
@@ -26,7 +27,15 @@ class Proveedores extends CI_Controller
 
         $data['singout']        = INDEX_PAGE . "user/logout?error=102&since=" . $_GET['since'] . "&sha1=" . $sha1;
 
-        session_check();
+        $data['ID']              = $_SESSION['ID'];
+        $data['IDadvance']       = $_SESSION['IDadvance'];
+        $data['User']            = $_SESSION['User'];
+        $data['Permissions']     = $_SESSION['Permissions'];
+        $data['Email']           = $_SESSION['Email'];
+        $data['Firstname']       = $_SESSION['Firstname'];
+        $data['Secondname']      = $_SESSION['Secondname'];
+        $data['Message']         = $_SESSION['Message'];
+        $data['Time']            = $_SESSION['Time'];        
 
         $this->load->view('loop/header', $data);
         $this->load->view('loop/top', $data);
@@ -48,7 +57,5 @@ class Proveedores extends CI_Controller
         $this->load->view('loop/footer', $data);
     }
     //--->
-
-
-    //----->
+//----->
 }

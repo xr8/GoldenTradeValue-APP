@@ -1,8 +1,7 @@
 <?php
 class User extends CI_Controller
 {
-    //----->
-
+//----->
     //--->
     public function __construct()
     {
@@ -31,7 +30,6 @@ class User extends CI_Controller
     }
     //--->
 
-    ### LOGIN ###
     //--->
     public function login()
     {
@@ -152,7 +150,5 @@ class User extends CI_Controller
         $this->load->view('loop/footer', $data);
     }
     //--->
-    ### LOGIN ###            
-
-    //----->
+//----->
 }

@@ -1,9 +1,8 @@
 <?php
 class Caja extends CI_Controller
 {
-    //----->
-
-    //--->
+//----->
+    //---> construct
     public function __construct()
     {
         parent::__construct();
@@ -13,9 +12,9 @@ class Caja extends CI_Controller
         
         session_check();
     }
-    //--->
-
-    //--->
+    //---> construct
+    
+    //---> index
     public function index()
     {
         $sha1  = random_string('sha1', 16);
@@ -51,8 +50,6 @@ class Caja extends CI_Controller
         $this->load->view('loop/admin-foot', $data);
         $this->load->view('loop/footer', $data);
     }
-    //--->
-
-
-    //----->
+    //---> index
+//----->
 }

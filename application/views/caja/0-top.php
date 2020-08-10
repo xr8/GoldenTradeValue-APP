@@ -6,14 +6,13 @@
 
           <div class="btn-group mr-2">
           <!-- CRUD -->
-            <button type="button" class="btn btn-sm btn-outline-secondary" id="caja-create"         data-toggle="modal" data-target="#createModal"       style="display: none;">Nuevo</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary" id="saldoinicial-create" data-toggle="modal" data-target="#saldoinicialModal" style="display: none;">Saldo Inicial</button>
-            <input  type="month"  id="start" name="start" min="2020-01" value="<?php echo date("Y-m"); ?>">
+            <button type="button" class="btn btn-sm btn-outline-secondary" id="btnNewEntradaSalida" data-toggle="modal" data-target="#saldoinicialModal" style="display: none;">Nuevo</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary" id="saldoinicial-create" data-toggle="modal" data-target="#saldoinicialModal"  style="display: none;">Saldo Inicial</button>
+            <input  type="month"  class=""                                 id="start"               name="start" min="2020-01" value="<?php echo date("Y-m"); ?>">
             <button type="button" class="btn btn-sm btn-outline-secondary" id="reloadCaja"><span class="oi oi-reload"></span></button>
             
 
             
-
           </div>
           <!--
           <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
