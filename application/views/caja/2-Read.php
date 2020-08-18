@@ -4,22 +4,21 @@
 
 <!-- Modal NEW -->
 <div id="rMestabla" class="table-responsive" style="display: none;">
+  <h4>Entradas /  Salidas</h4>
   <table class="table table-hover p-1 ">
     <thead class="thead-dark">
-      <tr>
+      <tr class="text-center">
         <th scope="col text-capitalize">#</th>
-        <th scope="col text-capitalize">Nombre</th>
+        <th scope="col text-capitalize">No</th>
         <th scope="col text-capitalize">Fecha</th>
-
+        <th scope="col text-capitalize">Nombre</th>
+        
         <th scope="col text-capitalize">Tipo</th>
-
+        <th scope="col text-capitalize">Concepto</th>
 
         <th scope="col text-capitalize">Entrada</th>
         <th scope="col text-capitalize">Salida</th>
         <th scope="col text-capitalize">Saldo</th>
-
-        <th scope="col text-capitalize">No compra</th>
-        <th scope="col text-capitalize">Concepto</th>
       </tr>
     </thead>
     <tbody id="allCaja" class="text-right ">
@@ -35,6 +34,54 @@
     </tbody>
   </table>
 </div>
+
+
+
+<!-- Modal NEW -->
+<div id="rCancelados" class="table-responsive  pt-5 " style="display: none;">
+  <h4>Cancelados</h4>
+  <table class="table table-hover p-1 ">
+    <thead class="thead-dark">
+      <tr class="text-center">
+        <th scope="col text-capitalize">#</th>
+        <th scope="col text-capitalize">No</th>
+        <th scope="col text-capitalize">Fecha</th>
+        <th scope="col text-capitalize">Nombre</th>
+        
+        <th scope="col text-capitalize">Tipo</th>
+        <th scope="col text-capitalize">Concepto</th>
+
+        <th scope="col text-capitalize">Entrada</th>
+        <th scope="col text-capitalize">Salida</th>
+        <th scope="col text-capitalize">Saldo</th>
+      </tr>
+    </thead>
+    <tbody id="allCancelados" class="text-right ">
+      <tr>
+        <th scope="row">demo 0</th>
+        <td>demo</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<div class="col-2 py-3">
+
+  <table class="table">
+    <thead class="text-center"><tr><th scope="col">Contenido</th></tr></thead>
+      <tbody class="text-center"> 
+        <tr >
+          <th scope="row" class="table-info"   >Inicial<br/>0 / 1 </th>
+          <th scope="row" class="table-success">Entrada<br/>+</th>
+          <th scope="row" class="table-warning">Salida<br/>-</th>
+          <th scope="row" class="table-danger" >Cancelado<br/>x</th>
+          <th scope="row" class="table-primary">Total<br/>=</th>
+        </tr>
+      </tbody>
+    </table>
+
+</div>      
 
 
 <div class="container bg-light mt-5 d-none" id="Ticket">
@@ -65,59 +112,7 @@
         <div class="col-6 text-left">Monto: </div>
         <div class="col-6 text-right text-uppercase" id="ticketMonto"> $0</div>
 
-        <div class="col-12">
-          <p>************************************************</p>
-        </div>
-        <div class="col-12 text-center">
-          <p>Monedas y Billetes</p>
-        </div>
 
-        <div class="col-4 text-center">$ 0.50</div>
-        <div class="col-4 text-center">X</div>
-        <div class="col-4 text-center" id="ticketM50">0</div>
-        <div class="col-4 text-center">$ 1.00</div>
-        <div class="col-4 text-center">X</div>
-        <div class="col-4 text-center" id="ticketM1">0</div>
-        <div class="col-4 text-center">$ 2.00</div>
-        <div class="col-4 text-center">X</div>
-        <div class="col-4 text-center" id="ticketM2">0</div>
-        <div class="col-4 text-center">$ 5.00</div>
-        <div class="col-4 text-center">X</div>
-        <div class="col-4 text-center" id="ticketM5">0</div>
-        <div class="col-4 text-center">$ 10.00</div>
-        <div class="col-4 text-center">X</div>
-        <div class="col-4 text-center" id="ticketM10">0</div>
-
-        <div class="col-6 text-center">Sub Total Monedas </div>
-        <div class="col-6 text-center" id="ticketSubTotalMonedas"> $00.00</div>
-
-        <div class="col-4 text-center">$ 20.00</div>
-        <div class="col-4 text-center">X</div>
-        <div class="col-4 text-center" id="ticketB20">0</div>
-        <div class="col-4 text-center">$ 50.00</div>
-        <div class="col-4 text-center">X</div>
-        <div class="col-4 text-center" id="ticketB50">0</div>
-        <div class="col-4 text-center">$ 100.00</div>
-        <div class="col-4 text-center">X</div>
-        <div class="col-4 text-center" id="ticketB100">0</div>
-        <div class="col-4 text-center">$ 200.00</div>
-        <div class="col-4 text-center">X</div>
-        <div class="col-4 text-center" id="ticketB200">0</div>
-        <div class="col-4 text-center">$ 500.00</div>
-        <div class="col-4 text-center">X</div>
-        <div class="col-4 text-center" id="ticketB500">0</div>
-        <div class="col-4 text-center">$ 1000.00</div>
-        <div class="col-4 text-center">X</div>
-        <div class="col-4 text-center" id="ticketB1000">0</div>
-
-        <div class="col-6 text-center">Sub Total Billetes </div>
-        <div class="col-6 text-center" id="ticketSubTotalBilletes"> $00.00</div>
-        <div class="col-6 text-left">Total </div>
-        <div class="col-6 text-center" id="ticketTotal"> $00.00</div>
-
-        <div class="col-12">
-          <p>************************************************</p>
-        </div>
         <div class="col-12">
           <p>################################################</p>
         </div>
