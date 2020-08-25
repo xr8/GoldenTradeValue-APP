@@ -4,7 +4,7 @@
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group mr-2">
           <!-- CRUD -->
-            <button type="button" class="btn btn-sm btn-outline-secondary" id="user-"       data-toggle="modal" data-target="#exampleModal">Nuevo</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary" id="user-new"       data-toggle="modal" data-target="#exampleModal">Nuevo</button>
             <button type="button" class="btn btn-sm btn-outline-secondary" id="user-update" data-toggle="modal" data-target="#updateModal">Actualizar</button>
             <button type="button" class="btn btn-sm btn-outline-secondary" id="user-delete" data-toggle="modal" data-target="#deleteModal">Borrar</button>
           </div>

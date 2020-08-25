@@ -104,7 +104,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary text-capitalize" data-dismiss="modal">cerrar ventana</button>
-        <button type="button" class="btn btn-success   text-capitalize" id="b-nuew-user">guardar cliente</button>
+        <button type="button" class="btn btn-success   text-capitalize" id="b-nuew-user">guardar proveedor</button>
       </div>
     </div>
   </div>

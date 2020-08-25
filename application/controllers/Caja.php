@@ -23,7 +23,7 @@ class Caja extends CI_Controller
         $data['page_title']     = "";
         $data['sub_page_title'] = 'Caja';
         $data['css']            = 'caja';
-        $data['js']             = 'toolcaja,caja,cajaall';
+        $data['js']             = 'toolcaja,caja,cajaall,cajaresumen';
 
         $data['singout']        = INDEX_PAGE . "user/logout?error=102&since=" . $_GET['since'] . "&sha1=" . $sha1;
 
