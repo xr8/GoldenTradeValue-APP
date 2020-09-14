@@ -4,7 +4,7 @@
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group mr-2">
           <!-- CRUD -->
-            <button type="button" class="btn btn-sm btn-outline-secondary" id="user-new"       data-toggle="modal" data-target="#exampleModal">Nuevo</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary" id="user-new"    data-toggle="modal" data-target="#exampleModal">Nuevo</button>
             <button type="button" class="btn btn-sm btn-outline-secondary" id="user-update" data-toggle="modal" data-target="#updateModal">Actualizar</button>
             <button type="button" class="btn btn-sm btn-outline-secondary" id="user-delete" data-toggle="modal" data-target="#deleteModal">Borrar</button>
           </div>
@@ -19,6 +19,6 @@
 
       <div class="col-10 offset-1 text-right py-3">
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary p-1">Resumen</button>
+        <!-- <button type="button" class="btn btn-primary p-1">Resumen</button> -->
         <input type="hidden" id="iduserupdate">
       </div>      

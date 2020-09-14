@@ -42,6 +42,8 @@ date_default_timezone_set('America/Mexico_City');
 
 $a_ngrok = explode(".", $_SERVER['HTTP_HOST']);
 
+define("GTV","golden trade value");
+
 //Local o Web
 if ($_SERVER['HTTP_HOST'] == 'localhost') {
 
