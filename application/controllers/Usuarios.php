@@ -22,8 +22,9 @@ class Usuarios extends CI_Controller
 
         $data['page_title']     = "";
         $data['sub_page_title'] = 'Reg&iacute;strate';
+        $data['sub_page_title2']= '';
         $data['css']            = 'usuarios';
-        $data['js']             = 'usuarios';
+        $data['js']             = 'usuarios,usuariosNuevo,usuariosActualizar,usuariosBorrar';
 
         $data['singout']        = INDEX_PAGE . "user/logout?error=102&since=" . $_GET['since'] . "&sha1=" . $sha1;
 

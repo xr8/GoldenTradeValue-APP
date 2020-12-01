@@ -108,6 +108,14 @@
                 </div>
                 <!-- Momento:-->
 
+                <!-- Opcional Folio:-->
+                <div class="form-group">
+                  <label for="exampleInputFolio">Folio</label>
+                  <input type="text" class="form-control" id="caja-folio" aria-describedby="folioHelp" placeholder="Folio Compra, Venta.">
+                  <small id="folioHelp" class="form-text text-muted">Folio</small>
+                </div>
+                <!-- Opcional Folio:-->
+
               </div>
               <!-- col 2 --->
 

@@ -1,6 +1,5 @@
 <div class="container-fluid">
   <div class="row">
-
     <!-- Begin: Top Menu -->
     <nav class="col-12 navbar navbar-expand-xl navbar-dark bg-dark" style="z-index: 200;position: fixed;">
       <a class="navbar-brand" href="#">GoldenTradeValue</a>
@@ -87,11 +86,7 @@
 
       </div>
     </nav>
-
-
-
     <!-- End  : Top Menu -->
-
   </div>
 </div>
 

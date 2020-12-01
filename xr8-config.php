@@ -66,13 +66,14 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
       if (ZONA == "local") {
 
         //----->
+        //http://localhost/server/DevOps/GoldenTradeValue/GoldenTradeValue-CDN/GoldenTradeValue-CDN-app/
           define("TITLE", PAGETITLE ." Money offline - ");
-
-          define("BASE_URL", '//'.$_SERVER['HTTP_HOST'].'/server/DevOps/GoldenTradeValue/');
-                
+        
+          define("BASE_URL", '//'.$_SERVER['HTTP_HOST'].'/server/DevOps/GoldenTradeValue/GoldenTradeValue-CDN/');
+          
             define("APP_URL",BASE_URL."GoldenTradeValue-APP/");
             define("API_URL",BASE_URL."GoldenTradeValue-API/");
-            define("CDN_URL",BASE_URL."GoldenTradeValue-CDN/app/");
+            define("CDN_URL",BASE_URL."GoldenTradeValue-CDN-app/");
 
             define("INDEX_PAGE", APP_URL.'index.php/');
             define("DEFAULTROUTER", 'user/login');
@@ -92,8 +93,8 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
             
               define("APP_URL",BASE_URL."GoldenTradeValue-APP/");
               define("API_URL",BASE_URL."GoldenTradeValue-API/");
-              define("CDN_URL",BASE_URL."GoldenTradeValue-CDN/app/");
-    
+              define("CDN_URL",BASE_URL."GoldenTradeValue-CDN-app/");
+              
               define("INDEX_PAGE", APP_URL.'index.php/');
               define("DEFAULTROUTER", 'user/login');
 
@@ -112,7 +113,7 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
               
                 define("APP_URL","//app.".BASE_URL."/");
                 define("API_URL","//api.".BASE_URL."/");
-                define("CDN_URL","//cdn.".BASE_URL."/");
+                define("CDN_URL","//cdn.".BASE_URL."/GoldenTradeValue-CDN-app/");
       
                 define("INDEX_PAGE", APP_URL.'');
                 define("DEFAULTROUTER", 'user/login');
