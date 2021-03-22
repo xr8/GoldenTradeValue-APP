@@ -69,11 +69,11 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
         //http://localhost/server/DevOps/GoldenTradeValue/GoldenTradeValue-CDN/GoldenTradeValue-CDN-app/
           define("TITLE", PAGETITLE ." Money offline - ");
         
-          define("BASE_URL", '//'.$_SERVER['HTTP_HOST'].'/server/DevOps/GoldenTradeValue/GoldenTradeValue-CDN/');
+          define("BASE_URL", '//'.$_SERVER['HTTP_HOST'].'/server/DevOps/GoldenTradeValue/');
           
             define("APP_URL",BASE_URL."GoldenTradeValue-APP/");
             define("API_URL",BASE_URL."GoldenTradeValue-API/");
-            define("CDN_URL",BASE_URL."GoldenTradeValue-CDN-app/");
+            define("CDN_URL",BASE_URL."GoldenTradeValue-CDN/GoldenTradeValue-CDN-app/");
 
             define("INDEX_PAGE", APP_URL.'index.php/');
             define("DEFAULTROUTER", 'user/login');
