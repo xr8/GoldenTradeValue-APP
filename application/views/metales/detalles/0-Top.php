@@ -1,14 +1,20 @@
 
 
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-  <h1 class="h2">Compra de Metales</h1><input type="text" value="<?php echo $_GET['id'];?>" disabled>
+  <h1 class="h1">Compra de Metales</h1>
+  <input type="hidden" value="<?php echo $_GET['id'];?>" id="id_advance_x" disabled>
 
   <div class="btn-toolbar mb-2 mb-md-0">
     <div class="btn-group mr-2">
       <!-- CRUD -->
-      <button type="button" class="btn btn-sm btn-outline-secondary" id="btnNewEntrega"       data-toggle="modal" data-target="#entregaModal" disabled>Generar Entrega</button>
-      <button type="button" class="btn btn-sm btn-outline-secondary" id="saldoinicial-create" data-toggle="modal" data-target="#saldoinicialModal"  style="display: none;">Saldo Inicial</button>
-      <input  type="month"  class=""                                 id="start"               name="start" min="2020-01" value="<?php echo date("Y-m"); ?>"               >
+      <button type="button" class="btn btn-sm btn-outline-secondary" id="btnModalSaldo"           data-toggle="modal" data-target="#saldoModal"            >saldo base</button>
+
+      <button type="button" class="btn btn-sm btn-outline-secondary" id="btnModalCierre"          data-toggle="modal" data-target="#cierreModal"           >cierre nuevo</button>
+      <button type="button" class="btn btn-sm btn-outline-secondary" id="btnModalEntrega"         data-toggle="modal" data-target="#entregaModal" disabled >entrega nueva</button>
+      
+      <button type="button" class="btn btn-sm btn-outline-secondary" id="btnentregasMultipleModal" data-toggle="modal" data-target="#entregasMultipleModal">entregas multiple</button>
+      <button type="button" class="btn btn-sm btn-outline-secondary" id="btnModalEntregaUnica"    data-toggle="modal" data-target="#entregaUnicaModal"     >entrega unica</button>
+
       <button type="button" class="btn btn-sm btn-outline-secondary" id="reloadCaja"                                                                                      ><span class="oi oi-reload"></span></button>
     </div>
   </div>
