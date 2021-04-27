@@ -324,17 +324,15 @@
             <div class="col-5 offset-1">
               <div class="mb-3">
                 <label for="firstName">No. de Vale</label>
-                <input type="text" class="form-control" id="input_eunvale" placeholder="" value="" required="" disabled>
-                <div class="invalid-feedback">No. de Vale</div>
+                <input type="text" class="form-control" id="input_eu_nvale" placeholder="" value="" required="" disabled>
+                <div class="invalid-feedback">No de Vale Unico.</div>
               </div>              
             </div>
             <div class="col-5">
               <div class="mb-3">
                 <label for="firstName">No. Ext</label>
                 <input type="text" class="form-control" id="input_eu_nolext" placeholder="" value="" required="">
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
+                <div class="invalid-feedback">No Ext Unico.</div>
               </div>              
             </div>
             <!-- -->
@@ -344,28 +342,24 @@
               <div class="mb-3">
                   <label for="firstName">Grs a/f</label>
                   <input type="text" class="form-control" id="input_eu_grsaf" placeholder="" value="" required="">
-                  <div class="invalid-feedback">
-                    Valid first name is required.
-                  </div>
+                  <div class="invalid-feedback">Grs a/f Unico.</div>
                 </div>
                 <div class="mb-3">
                   <label for="firstName">Grs</label>
                   <input type="text" class="form-control" id="input_eu_grs" placeholder="" value="" required="">
-                  <div class="invalid-feedback">
-                    Valid first name is required.x
-                  </div>
+                  <div class="invalid-feedback">Grs Unico.</div>
                 </div>                
                 <div class="mb-3">
                   <label for="firstName">Ley</label>
                   <input type="text" class="form-control" id="input_eu_ley" placeholder="" value="" required="">
-                  <div class="invalid-feedback">Valid first name is required.</div>
+                  <div class="invalid-feedback">Ley Unico.</div>
                 </div>              
             </div>
             <div class="col-5">
               <div class="mb-3">
                   <label for="firstName">Fino</label>
                   <input type="text" class="form-control" id="input_eu_fino" placeholder="" value="" required="" disabled data-toggle="tooltip" data-placement="top" title="barra*ley/24">
-                  <div class="invalid-feedback">Valid first name is required.</div>
+                  <div class="invalid-feedback">Fino Unico.</div>
               </div>              
             </div>
             <!-- -->        
@@ -380,17 +374,13 @@
             <div class="mb-3">
                 <label for="firstName">Precio</label>
                 <input type="text" class="form-control" id="input_eu_precio" placeholder="" value="" required="">
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
+                <div class="invalid-feedback">Precio Unico.</div>
               </div>
 
                 <div class="mb-3">
                   <label for="firstName">Fino/Pza</label>
                   <input type="text" class="form-control" id="input_eu_finopza" placeholder="" value="" required="">
-                  <div class="invalid-feedback">
-                    Valid first name is required.
-                  </div>
+                  <div class="invalid-feedback">Fino/Pza Unico.</div>
                 </div>
               
             </div>
@@ -400,7 +390,7 @@
                 <div class="mb-3">
                   <label for="firstName">importe</label>
                   <input type="text" class="form-control" id="input_eu_importe" placeholder="" value="" required="" disabled data-toggle="tooltip" data-placement="top" title="precio * Fino/Pza">
-                  <div class="invalid-feedback">Valid first name is required.</div>
+                  <div class="invalid-feedback">Importe Unico.</div>
                 </div>
  
             </div>
@@ -415,9 +405,7 @@
               <div class="mb-3">
                 <label for="firstName">pagos</label>
                 <input type="text" class="form-control" id="input_eu_pagos" placeholder="" value="0" required="">
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
+                <div class="invalid-feedback">Pago Unico.</div>
               </div>
 
 
@@ -428,15 +416,13 @@
               <div class="mb-3">
                 <label for="firstName">total</label>
                 <input type="text" class="form-control" id="input_eu_total" placeholder="" value="" required="" disabled  data-toggle="tooltip" data-placement="top" title=" = importe">
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
+                <div class="invalid-feedback">Total Unico.</div>
               </div>
 
                 <div class="mb-3">
                   <label for="firstName">saldo</label>
                   <input type="text" class="form-control" id="input_eu_saldo" placeholder="" value="" required="" disabled data-toggle="tooltip" data-placement="top" title="saldo actual + total - pago">
-                  <div class="invalid-feedback">Valid first name is required.</div>
+                  <div class="invalid-feedback">Saldo Unico.</div>
                 </div>
        
             </div>
