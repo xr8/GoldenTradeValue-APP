@@ -84,7 +84,7 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
             define("DATABASE", 'labs26');
         //----->
 
-        }else if  (ZONA == "ngrok"){
+      }else if  (ZONA == "ngrok"){
 
           //----->
             define("TITLE", PAGETITLE ." Money ngrok - ");
@@ -104,7 +104,7 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
               define("DATABASE", 'labs26');
           //----->
 
-          }else{
+        }else{
 
             //----->
               define("TITLE", PAGETITLE ." Golden Trade Value - ");
@@ -124,4 +124,4 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
                 define("DATABASE", 'labs26');
             //----->      
                     
-            }
+          }
