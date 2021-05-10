@@ -14,7 +14,8 @@
       <button type="button" class="btn btn-success" id="btnModalCierre"          data-toggle="modal" data-target="#cierreModal"           >generar cierre</button>
       <button type="button" class="btn btn-primary" id="btnModalCierreSimple"    data-toggle="modal" data-target="#cierreSimple">cierre simple</button>      
       <button type="button" class="btn btn-primary" id="btnModalEntrega"         data-toggle="modal" data-target="#entregaModal" disabled >entrega nueva</button>
-          
+
+      <button type="button" class="btn btn-success" id="btnModalCierreDos"          data-toggle="modal" data-target="#entregasMultipleModal"           >cierre</button>
 
     </div>
   </div>

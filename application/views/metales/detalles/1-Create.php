@@ -124,12 +124,12 @@
 </div>
 
 
-<!-- Modal Entrega-->
+<!-- Modal Entrega xxx-->
 <div class="modal fade" id="entregaUnicaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Generar Entrega $ <span class="saldoActual">loading</span> </h5>
+        <h5 class="modal-title" id="exampleModalLabel">Generar Entrega$ <span class="saldoActual">loading</span> </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -260,10 +260,11 @@
 </div>
 
 
-<!-- Modal Entregas Multiple-->
+<!-- Modal Cierre multiple con entrega previa-->
 <div class="modal fade" id="entregasMultipleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
+      
       <div class="modal-header">
       <h5 class="modal-title" id="exampleModalLabel">Generar Entrega $ <span class="saldoActual">loading</span> </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -274,35 +275,53 @@
       <div class="modal-body">
         <input type="text" id="cierreEntrega" class="" disabled hidden>
 
-        <!-- entregas -->
-        <div class="row"><div class="col-11 offset-1"><h5 class="text-capitalize">entregas multiple</h5></div></div>
-
-        <div class="row">
-          <div class="col-5 offset-1 mb-3">
-            <label for="firstName">Fecha</label>
-            <input type="date" class="form-control" id="input_emfecha" placeholder="" value="" required="">
-            <div class="invalid-feedback">YYYY/MM/DD</div>          
-          </div>
+        <div class="row ge-show-load2">
+              <div class="col-12 d-flex align-items-center">
+              <strong>Loading...</strong>
+              <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+              </div>
         </div>
 
         <div class="row">
-          <div class="col-5 offset-1">
-                <div class="mb-3">
-                  <label for="firstName">No. de Vale</label>
-                  <input type="text" class="form-control" id="input_emnvale" placeholder="" value="" required="" disabled>
-                  <div class="invalid-feedback">No. de Vale</div>
-                </div>
-          </div>
+              <div class="col-12 ge-show2 d-none mb-2">
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item active d-flex justify-content-between align-items-center flex-fill  text-uppercase font-weight-light">ID Cierre<span id="metales_id"    class="font-weight-bold">000   </span><input type="hidden" id="input_id_advance" disabled></li>
+                    <li class="list-group-item active d-flex justify-content-between align-items-center flex-fill  text-uppercase font-weight-light">Tipo     <span id="metalesAccion" class="font-weight-bold">000  </span></li>
+                    <li class="list-group-item active d-flex justify-content-between align-items-center flex-fill  text-uppercase font-weight-light">Fecha    <span id="metalesFecha"  class="font-weight-bold">000 </span></li>
+                  </ul> 
+              </div>
 
-          <div class="col-5">
-            <div class="mb-3">
-              <label for="firstName">No. Exts</label>
-              <input type="text" class="form-control" id="input_emnoext" placeholder="" value="" required="">
-              <div class="invalid-feedback">No. Exts</div>
-            </div>            
-          </div>         
-        </div>
-  
+              <div class="col-4 ge-show2 d-none">
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Precio                       <span id="metales_precio"  class="font-weight-bold">000 </span></li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Metal                        <span id="metalesTipo"     class="font-weight-bold">000 </span></li>                  
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Status                       <span id="metalesStatus"   class="font-weight-bold">000 </span></li>
+                </ul>   
+
+                <label for="firstName">No. Vale</label>
+                <input type="text" class="form-control" id="save_cierredos" placeholder="" value="" required="" disabled="">
+          
+            
+              </div>
+
+              <div class="col-4 ge-show2 d-none">
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Peso Original                <span id="metales_peso"  class="font-weight-bold">000        </span></li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Saldo  Original              <span id="metales_saldo" class="font-weight-bold">000       </span></li>                
+                </ul>            
+              </div>  
+
+              <div class="col-4 ge-show2 d-none">
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Peso  Actual                 <span id="metales_peso_actual"  class="font-weight-bold">000 </span></li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Saldo Actual                 <span id="metales_saldo_actual" class="font-weight-bold">000       </span></li>                
+                </ul>            
+              </div>  
+
+            </div>
+            
+            
+
         <div class="row mb-5" id="cmPlus"><div class="col-12 text-right text-primary text-4xl"><i class="bi bi-plus-circle-fill" id="plusEntrega"></i></div></div>
 
         <div class="row" id="multiEntregas">
@@ -348,16 +367,13 @@
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar Entrega</button>
         <button type="button" class="btn btn-primary" id="btnGenerarEntregaMultiple">Generar Entrega</button>
       </div>
+
     </div>
   </div>
 </div>
 
 
-
-
-
-
-<!-- Modal Cierre Simple-->
+<!-- Modal Cierre Simple con un cierre previo-->
 <div class="modal fade" id="cierreSimple" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-md">
     <div class="modal-content">
@@ -438,7 +454,7 @@
   </div>
 </div>
 
-<!-- Modal Generar Entrega-->
+<!-- Modal Generar Entrega primero selecion un cierre para generar una entrega-->
 <div class="modal fade" id="entregaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -469,12 +485,18 @@
                     <li class="list-group-item active d-flex justify-content-between align-items-center flex-fill  text-uppercase font-weight-light">Fecha    <span id="metalesFecha"  class="font-weight-bold">000 </span></li>
                   </ul> 
               </div>
+
               <div class="col-4 ge-show d-none">
                 <ul class="list-group">
                   <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Precio                       <span id="metales_precio"  class="font-weight-bold">000 </span></li>
                   <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Metal                        <span id="metalesTipo"     class="font-weight-bold">000 </span></li>                  
                   <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Status                       <span id="metalesStatus"   class="font-weight-bold">000 </span></li>
-                </ul>               
+                </ul>   
+
+                <label for="firstName">No. Vale</label>
+                <input type="text" class="form-control" id="input_emnvaleE1" placeholder="" value="" required="" disabled="">
+          
+            
               </div>
 
               <div class="col-4 ge-show d-none">
@@ -493,6 +515,7 @@
 
             </div>
 
+
           </div>
         </div>   
 
@@ -504,7 +527,7 @@
 
               <div class="mb-3">
                 <label for="firstName">No. Ext</label>
-                <input type="text" class="form-control" id="input_nolext" placeholder="" value="" required="">
+                <input type="text" class="form-control" id="input_nolext" placeholder="" value="0" required="">
                 <div class="invalid-feedback">
                   Valid first name is required.
                 </div>
@@ -512,13 +535,11 @@
 
               <div class="mb-3">
                 <label for="firstName">Grs a/f</label>
-                <input type="text" class="form-control" id="input_grsaf" placeholder="" value="" required="">
+                <input type="text" class="form-control" id="input_grsaf" placeholder="" value="0" required="">
                 <div class="invalid-feedback">
                   Valid first name is required.
                 </div>
               </div>
-
-              <input type="text" class="form-control" id="input_emnvaleE1" placeholder="" value="" required="" disabled="">
               
             </div>
 
@@ -542,70 +563,6 @@
                   <div class="invalid-feedback">Valid first name is required.</div>
                 </div>
 
-            </div>
-
-        </div>
-
-        <!-- cierres -->
-        <div class="row bg-white">
-            <div class="col-12" ><h5 class="text-capitalize">cierres</h5></div>
-            
-            <div class="col-5 offset-1">
-
-                <div class="mb-3">
-                  <label for="firstName">Fino/Pza</label>
-                  <input type="text" class="form-control" id="input_finopza" placeholder="" value="" required="">
-                  <div class="invalid-feedback">
-                    Valid first name is required.
-                  </div>
-                </div>
-              
-            </div>
-
-            <div class="col-5">
-
-                <div class="mb-3">
-                  <label for="firstName">importe</label>
-                  <input type="text" class="form-control" id="input_importe" placeholder="" value="" required="" disabled data-toggle="tooltip" data-placement="top" title="precio * Fino/Pza">
-                  <div class="invalid-feedback">Valid first name is required.</div>
-                </div>
- 
-            </div>
-
-        </div>
-
-        <!-- pagos -->
-        <div class="row bg-white">
-            <div class="col-12" ><h5 class="text-capitalize">pagos</h5></div>
-            <div class="col-5 offset-1">
-
-              <div class="mb-3">
-                <label for="firstName">pagos</label>
-                <input type="text" class="form-control" id="input_pagos" placeholder="" value="0" required="">
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
-              </div>
-
-
-
-            </div>
-
-            <div class="col-5">
-              <div class="mb-3">
-                <label for="firstName">total</label>
-                <input type="text" class="form-control" id="input_total" placeholder="" value="" required="" disabled  disabled data-toggle="tooltip" data-placement="top" title=" = importe">
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
-              </div>
-
-                <div class="mb-3">
-                  <label for="firstName">saldo</label>
-                  <input type="text" class="form-control" id="input_saldo" placeholder="" value="" required="" disabled data-toggle="tooltip" data-placement="top" title="saldo actual + total - pago">
-                  <div class="invalid-feedback">Valid first name is required.</div>
-                </div>
-       
             </div>
 
         </div>
