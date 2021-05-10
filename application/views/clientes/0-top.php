@@ -7,8 +7,8 @@
           <div class="btn-group mr-2">
           <!-- CRUD -->
             <button type="button" class="btn btn-sm btn-outline-secondary" id="user-create" data-toggle="modal" data-target="#createModal">Nuevo</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary" id="user-update" data-toggle="modal" data-target="#updateModal" >Actualizar</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary" id="user-delete" data-toggle="modal" data-target="#deleteModal" >Borrar</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary" id="user-update" data-toggle="modal" data-target="#updateModal" disabled>Actualizar</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary" id="user-delete" data-toggle="modal" data-target="#deleteModal" disabled>Borrar</button>
           </div>
           <!--
           <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">

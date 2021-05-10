@@ -3,7 +3,6 @@
   <div class="btn-toolbar mb-2 mb-md-0">
     <div class="btn-group mr-2">
       <!-- CRUD -->
-      <button type="button" class="btn btn-sm btn-outline-secondary" id="btnNuevoCierres"  data-toggle="modal" data-target="#cierreNuevoModal">Cierre Nuevo</button>
       <button type="button" class="btn btn-sm btn-outline-secondary" id="btnDetallesCierres" disabled>Detalles</button>
       <button type="button" class="btn btn-sm btn-outline-secondary" id="btnCierres" ><span class="oi oi-reload"></span></button>
     </div>
@@ -29,9 +28,9 @@
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">ID Cliente</th>
-                                    <th scope="col">Fecha</th>
                                     <th scope="col">Nombre</th>
-                                    <th scope="col">N° de Operaciones</th>
+                                    <th scope="col">Telefono</th>
+                                    <th scope="col">Saldo</th>
                                 </tr>
                             </thead>
                             <tbody id="loadingMetales"></tbody>

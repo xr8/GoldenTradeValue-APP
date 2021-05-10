@@ -25,19 +25,19 @@
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between lh-condensed">
                                     <div>
-                                        <h6 class="my-0" id="resumenInputRfc1">- Loading - </h6>
+                                        <h6 class="my-0 text-uppercase" id="resumenInputRfc1">- Loading - </h6>
                                         <small class="text-muted">R.F.C</small>
                                     </div>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between lh-condensed">
                                     <div>
-                                        <h6 class="my-0" id="resumenInputPais1">- Loading - </h6>
+                                        <h6 class="my-0 text-uppercase" id="resumenInputPais1">- Loading - </h6>
                                         <small class="text-muted">País de nacionalidad</small>
                                     </div>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between lh-condensed">
                                     <div>
-                                        <h6 class="my-0" id="resumenInputgiro1">- Loading - </h6>
+                                        <h6 class="my-0 text-uppercase" id="resumenInputgiro1">- Loading - </h6>
                                         <small class="text-muted">Giro mercantil</small>
                                     </div>
                                 </li>                                                                                                
@@ -51,25 +51,25 @@
                             <ul class="list-group mb-3">
                                 <li class="list-group-item d-flex justify-content-between lh-condensed">
                                     <div>
-                                        <h6 class="my-0" id="resumenInputNombre">- Loading - </h6>
+                                        <h6 class="my-0 text-capitalize" id="resumenInputNombre">- Loading - </h6>
                                         <small class="text-muted">Nombre completo</small>
                                     </div>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between lh-condensed">
                                     <div>
-                                        <h6 class="my-0" id="resumenInputRfc">- Loading - </h6>
+                                        <h6 class="my-0 text-uppercase" id="resumenInputRfc">- Loading - </h6>
                                         <small class="text-muted">R.F.C</small>
                                     </div>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between lh-condensed">
                                     <div>
-                                        <h6 class="my-0" id="resumenInputCurp">- Loading - </h6>
+                                        <h6 class="my-0 text-uppercase" id="resumenInputCurp">- Loading - </h6>
                                         <small class="text-muted">C.U.R.P</small>
                                     </div>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between lh-condensed">
                                     <div>
-                                        <h6 class="my-0" id="resumenInputDireccion">- Loading - </h6>
+                                        <h6 class="my-0 text-capitalize" id="resumenInputDireccion">- Loading - </h6>
                                         <small class="text-muted">Dirección completa</small>
                                     </div>
                                 </li>

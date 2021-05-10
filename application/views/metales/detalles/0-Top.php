@@ -10,16 +10,12 @@
   <div class="btn-toolbar mb-2 mb-md-0">
     <div class="btn-group mr-2">
       <!-- CRUD -->
-      <button type="button" class="btn btn-sm btn-outline-secondary" id="btnModalSaldo"           data-toggle="modal" data-target="#saldoModal"            >saldo base</button>
-      
-      <button type="button" class="btn btn-sm btn-outline-secondary" id="btnModalCierre"          data-toggle="modal" data-target="#cierreModal"           >cierre nuevo</button>
-      <button type="button" class="btn btn-sm btn-outline-secondary" id="btnModalEntrega"         data-toggle="modal" data-target="#entregaModal" disabled >entrega nueva</button>
-      
-      <button type="button" class="btn btn-sm btn-outline-secondary" id="btnentregasMultipleModal" data-toggle="modal" data-target="#entregasMultipleModal">entregas multiple</button>
+      <button type="button" class="btn btn-success" id="btnModalSaldo"           data-toggle="modal" data-target="#saldoModal"            >saldo base   </button>      
+      <button type="button" class="btn btn-success" id="btnModalCierre"          data-toggle="modal" data-target="#cierreModal"           >generar cierre</button>
+      <button type="button" class="btn btn-primary" id="btnModalCierreSimple"    data-toggle="modal" data-target="#cierreSimple">cierre simple</button>      
+      <button type="button" class="btn btn-primary" id="btnModalEntrega"         data-toggle="modal" data-target="#entregaModal" disabled >entrega nueva</button>
+          
 
-      <button type="button" class="btn btn-sm btn-outline-secondary" id="btnModalEntregaUnica"    data-toggle="modal" data-target="#entregaUnicaModal"     >entrega unica</button>
-
-      <button type="button" class="btn btn-sm btn-outline-secondary" id="reloadCaja"                                                                                      ><span class="oi oi-reload"></span></button>
     </div>
   </div>
 </div>

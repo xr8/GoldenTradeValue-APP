@@ -17,31 +17,32 @@ class Clientes extends CI_Controller
     //--->
     public function index()
     {
-        $sha1  = random_string('sha1', 16);
+        $sha1                   = random_string('sha1', 16);
         $data['sha1']           = $sha1;
 
         $data['page_title']     = "";
-        $data['sub_page_title'] = 'Reg&iacute;strate';
-        $data['css']            = 'clientes';
-        $data['js']             = 'clientes';
+        $data['sub_page_title'] = 'Compra de Metales';
+        $data['css']            = 'metales';
+        $data['js']             ='clientes/clientes,clientes/btn,clientes/xhr';
 
         $data['singout']        = INDEX_PAGE . "user/logout?error=102&since=" . $_GET['since'] . "&sha1=" . $sha1;
 
-        $data['ID']              = $_SESSION['ID'];
-        $data['IDadvance']       = $_SESSION['IDadvance'];
-        $data['User']            = $_SESSION['User'];
-        $data['Permissions']     = $_SESSION['Permissions'];
-        $data['Email']           = $_SESSION['Email'];
-        $data['Firstname']       = $_SESSION['Firstname'];
-        $data['Secondname']      = $_SESSION['Secondname'];
-        $data['Message']         = $_SESSION['Message'];
-        $data['Time']            = $_SESSION['Time'];
+        $data['ID']             = $_SESSION['ID'];
+        $data['IDadvance']      = $_SESSION['IDadvance'];
+        $data['User']           = $_SESSION['User'];
+        $data['Permissions']    = $_SESSION['Permissions'];
+        $data['Email']          = $_SESSION['Email'];
+        $data['Firstname']      = $_SESSION['Firstname'];
+        $data['Secondname']     = $_SESSION['Secondname'];
+        $data['Message']        = $_SESSION['Message'];
+        $data['Time']           = $_SESSION['Time'];
 
         $this->load->view('loop/header', $data);
         $this->load->view('loop/top', $data);
         $this->load->view('loop/admin-top', $data);
 
-        //--->
+        //------------------------------------------------------>
+        
         $this->load->view('clientes/0-top.php', $data);
 
         //--->CRUD
@@ -51,8 +52,9 @@ class Clientes extends CI_Controller
         $this->load->view('clientes/4-Delete.php', $data);
         $this->load->view('clientes/5-Resumen.php', $data);
         //--->CRUD
-        //--->
-
+        
+        //------------------------------------------------------>
+        
         $this->load->view('loop/admin-foot', $data);
         $this->load->view('loop/footer', $data);
     }

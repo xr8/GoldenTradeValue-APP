@@ -23,7 +23,7 @@ class Metales extends CI_Controller
         $data['page_title']     = "";
         $data['sub_page_title'] = 'Compra de Metales';
         $data['css']            = 'metales';
-        $data['js']             = 'metales/metales';
+        $data['js']             = 'metales/index/metales,metales/index/btn,metales/index/xhr';
 
         $data['singout']        = INDEX_PAGE . "user/logout?error=102&since=" . $_GET['since'] . "&sha1=" . $sha1;
 
@@ -62,7 +62,7 @@ class Metales extends CI_Controller
         $data['page_title']     = "";
         $data['sub_page_title'] = 'Compra de Metales';
         $data['css']            = 'metales';
-        $data['js']             ='metales/detalles,metales/btndetalles,metales/nuevo,metales/entregamultiple,metales/entregaunica,metales/xhr';
+        $data['js']             ='metales/detalles/detalles,metales/detalles/btndetalles,metales/detalles/nuevo,metales/detalles/entregamultiple,metales/detalles/entregaunica,metales/detalles/xhr';
 
         $data['singout']        = INDEX_PAGE . "user/logout?error=102&since=" . $_GET['since'] . "&sha1=" . $sha1;
 
@@ -80,11 +80,13 @@ class Metales extends CI_Controller
         $this->load->view('loop/top', $data);
         $this->load->view('loop/admin-top', $data);
 
-        //--->
+        //------------------------------------------------------>
+
         $this->load->view('metales/detalles/0-Top', $data);
         $this->load->view('metales/detalles/1-Create', $data);
         $this->load->view('metales/detalles/2-Reader', $data);
-        //--->
+
+        //------------------------------------------------------>
         
         $this->load->view('loop/admin-foot', $data);
         $this->load->view('loop/footer', $data);
