@@ -62,7 +62,7 @@ class Metales extends CI_Controller
         $data['page_title']     = "";
         $data['sub_page_title'] = 'Compra de Metales';
         $data['css']            = 'metales';
-        $data['js']             ='metales/detalles/detalles,metales/detalles/btndetalles,metales/detalles/nuevo,metales/detalles/entregamultiple,metales/detalles/entregaunica,metales/detalles/xhr';
+        $data['js']             ='metales/detalles/detalles,metales/detalles/btndetalles,metales/detalles/nuevo,metales/detalles/entregamultiple,metales/detalles/entregaunica,metales/detalles/xhr,metales/detalles/cierresimple';
 
         $data['singout']        = INDEX_PAGE . "user/logout?error=102&since=" . $_GET['since'] . "&sha1=" . $sha1;
 
