@@ -1,3 +1,5 @@
+<!-- BTNS -->
+
 <!-- Modal Cierre-->
 <div class="modal fade" id="saldoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-md">
@@ -119,6 +121,360 @@
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar Cierre</button>
         <button type="button" class="btn btn-primary" id="btnGenerarCierre">Generar Cierre</button>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Cierre Simple con un cierre previo-->
+<div class="modal fade" id="cierreSimple" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">cierre simple</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+
+      <div class="modal-body">
+
+        <!-- entregas -->
+        <div class="row bg-white">
+
+          <div class="col-12" >
+            <h5 class="text-capitalize">cierres</h5>
+
+              <div class="mb-3">
+                  <label for="firstName">No vale actual</label>
+                  <input type="text"id="save_vale_cs" value="0" disabled>
+                </div>
+
+                <div class="mb-3">
+                  <label for="firstName">Fino/Pza</label>
+                  <input type="text" class="form-control" id="input_cs_fino" placeholder="" value="" required="">
+                  <div class="invalid-feedback">Fino/Pza</div>
+                </div>
+                <div class="mb-3">
+                  <label for="firstName">Precio</label>
+                  <input type="text" class="form-control" id="input_cs_precio" placeholder="" value="" required="">
+                  <div class="invalid-feedback">Precio</div>
+                </div>                
+                <div class="mb-3">
+                  <label for="firstName">Importe</label>
+                  <input type="text" class="form-control" id="input_cs_importe" placeholder="" value="" required="" disabled>
+                  <div class="invalid-feedback">Importe</div>
+                </div>             
+          </div>
+            
+          <div class="col-12" >
+            <h5 class="text-capitalize">pagos</h5>
+
+            <div class="mb-3">
+                <label for="firstName">total</label>
+                <input type="text" class="form-control" id="input_cs_total" placeholder="" value="" required="" data-toggle="tooltip" data-placement="top" title=" = importe">
+                <div class="invalid-feedback">Total Unico.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="firstName">pagos</label>
+                <input type="text" class="form-control" id="input_cs_pagos" placeholder="" value="" required="">
+                <div class="invalid-feedback">Pago Unico.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="firstName">saldo</label>
+                <input type="text" class="form-control" id="input_cs_saldo" placeholder="" value="" required="" data-toggle="tooltip" data-placement="top" title="saldo actual + total - pago" disabled>
+                <div class="invalid-feedback">Saldo Unico.</div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="firstName">observaciones</label>
+                <textarea name="textarea" rows="10" cols="50" class="form-control" id="input_cs_observaciones" data-placement="top" title=""></textarea>
+                <div class="invalid-feedback">Saldo Unico.</div>
+              </div>      
+
+              
+          </div>
+      
+        </div>
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
+        <button type="button" class="btn btn-primary" id="btnSaveCierreS">guardar cierre simple</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Modal Generar Entrega primero selecion un cierre para generar una entrega-->
+<div class="modal fade" id="entregaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Generar Entrega...</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input type="text" id="cierreEntrega" class="" disabled hidden>
+
+        <div class="row">
+          <div class="col-12 shadow-sm p-3 mb-5 bg-white rounded">
+
+            <div class="row ge-show-load">
+              <div class="col-12 d-flex align-items-center">
+              <strong>Loading...</strong>
+              <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 ge-show d-none mb-2">
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item active d-flex justify-content-between align-items-center flex-fill  text-uppercase font-weight-light en-txt">ID Cierre<span id="metales_id"    class="font-weight-bold">000   </span><input type="hidden" id="input_id_advance" disabled></li>
+                    <li class="list-group-item active d-flex justify-content-between align-items-center flex-fill  text-uppercase font-weight-light en-txt">Tipo     <span id="metalesAccion" class="font-weight-bold">000  </span></li>
+                    <li class="list-group-item active d-flex justify-content-between align-items-center flex-fill  text-uppercase font-weight-light en-txt">Fecha    <span id="metalesFecha"  class="font-weight-bold">000 </span></li>
+                  </ul> 
+              </div>
+
+              <div class="col-4 ge-show d-none">
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light en-txt">Precio                       <span id="metales_precio"  class="font-weight-bold">000 </span></li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light en-txt">Metal                        <span id="metalesTipo"     class="font-weight-bold">000 </span></li>                  
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light en-txt">Status                       <span id="metalesStatus"   class="font-weight-bold">000 </span></li>
+                </ul>   
+
+                <label for="firstName">No. Vale</label>
+                <input type="text" class="form-control" id="input_emnvaleE1" placeholder="" value="" required="" disabled="">
+          
+            
+              </div>
+
+              <div class="col-4 ge-show d-none">
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light en-txt">Peso Original                <span id="metales_peso"  class="font-weight-bold">000        </span></li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light en-txt">Saldo  Original              <span id="metales_saldo" class="font-weight-bold">000       </span></li>                
+                </ul>            
+              </div>  
+
+              <div class="col-4 ge-show d-none">
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light en-txt">Peso  Actual                 <span id="metales_peso_actual"  class="font-weight-bold">000 </span></li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light en-txt">Saldo Actual                 <span id="metales_saldo_actual" class="font-weight-bold">000       </span></li>                
+                </ul>            
+              </div>  
+
+            </div>
+
+
+          </div>
+        </div>   
+
+        <!-- entregas -->
+        <div class="row bg-white">
+            <div class="col-12" ><h5 class="text-capitalize">entregas</h5></div>
+            <div class="col-5 offset-1">
+
+
+              <div class="mb-3">
+                <label for="firstName">No. Ext</label>
+                <input type="text" class="form-control" id="input_nolext" placeholder="" value="0" required="">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="firstName">Grs a/f</label>
+                <input type="text" class="form-control" id="input_grsaf" placeholder="" value="0" required="">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="col-5">
+
+                <div class="mb-3">
+                  <label for="firstName">Barra</label>
+                  <input type="text" class="form-control" id="input_barra" placeholder="" value="" required="">
+                  <div class="invalid-feedback">Valid first name is required.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="firstName">Ley</label>
+                  <input type="text" class="form-control" id="input_ley" placeholder="" value="" required="">
+                  <div class="invalid-feedback">Valid first name is required.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="firstName">Fino</label>
+                  <input type="text" class="form-control" id="input_fino" placeholder="" value="" required="" disabled data-toggle="tooltip" data-placement="top" title="barra*ley/24">
+                  <div class="invalid-feedback">Valid first name is required.</div>
+                </div>
+
+            </div>
+
+        </div>
+
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar Entrega</button>
+        <button type="button" class="btn btn-primary" id="btnGenerarEntrega">Generar Entrega</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Cierre multiple con entrega previa-->
+<div class="modal fade" id="entregasMultipleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Generar Cierre $ <span class="saldoActual">loading</span> </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <input type="text" id="cierreEntrega" class="" disabled hidden>
+
+        <div class="row ge-show-load2">
+              <div class="col-12 d-flex align-items-center">
+              <strong>Loading...</strong>
+              <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+              </div>
+        </div>
+
+        <div class="row">
+              <div class="col-12 ge-show2 d-none mb-2">
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item active d-flex justify-content-between align-items-center flex-fill  text-uppercase font-weight-light">ID Cierre<span id="metales_id"    class="font-weight-bold">000   </span><input type="hidden" id="input_id_advance" disabled></li>
+                    <li class="list-group-item active d-flex justify-content-between align-items-center flex-fill  text-uppercase font-weight-light">Tipo     <span id="metalesAccion" class="font-weight-bold">000  </span></li>
+                    <li class="list-group-item active d-flex justify-content-between align-items-center flex-fill  text-uppercase font-weight-light">Fecha    <span id="metalesFecha"  class="font-weight-bold">000 </span></li>
+                  </ul> 
+              </div>
+
+              <div class="col-4 ge-show2 d-none">
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Precio                       <span id="metales_precio"  class="font-weight-bold">000 </span></li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Metal                        <span id="metalesTipo"     class="font-weight-bold">000 </span></li>                  
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Status                       <span id="metalesStatus"   class="font-weight-bold">000 </span></li>
+                </ul>   
+
+                <label for="firstName">No. Vale</label>
+                <input type="text" class="form-control" id="save_cierredos" placeholder="" value="" required="" disabled="">
+          
+            
+              </div>
+
+              <div class="col-4 ge-show2 d-none">
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Peso Original                <span id="metales_peso"  class="font-weight-bold">000        </span></li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Saldo  Original              <span id="metales_saldo" class="font-weight-bold">000       </span></li>                
+                </ul>            
+              </div>  
+
+              <div class="col-4 ge-show2 d-none">
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Peso  Actual                 <span id="metales_peso_actual"  class="font-weight-bold">000 </span></li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Saldo Actual                 <span id="metales_saldo_actual" class="font-weight-bold">000       </span></li>                
+                </ul>            
+              </div>  
+
+            </div>
+            
+            
+
+        <div class="row mb-5" id="cmPlus"><div class="col-12 text-right text-primary text-4xl"><i class="bi bi-plus-circle-fill" id="plusEntrega"></i></div></div>
+
+        <div class="row" id="multiEntregas">
+
+        <div class="col-12 rowEntrada ' + x + '">
+        <!-- Begin: cierres no ' + x + '-->
+        <div class="cmItem1  row col-10 offset-1 shadow-lg p-3 mb-5 bg-body rounded">
+            <!--Begin:-->
+            <div class="col-12" >
+              <h5 class="text-capitalize">cierres</h5>
+
+              <div class="row">
+                <div class="col-6">
+                  <div class="mb-3">
+                    <label for="firstName">Fino/Pza</label>
+                    <input type="text" class="form-control 1 input_cm_fino" placeholder="" value="" required="">
+                    <div class="invalid-feedback">Fino/Pza</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="firstName">Precio</label>
+                    <input type="text" class="form-control 1 input_cm_precio" placeholder="" value="" required="">
+                    <div class="invalid-feedback">Precio</div>
+                  </div> 
+                </div>
+                <div class="col-6">
+                  <div class="mb-3">
+                    <label for="firstName">Importe</label>
+                    <input type="text" class="form-control 1 input_cm_importe" placeholder="" value="" required="">
+                    <div class="invalid-feedback">Importe</div>
+                  </div>   
+                </div> 
+              </div>
+            </div>
+            
+            <div class="col-12" >
+              <h5 class="text-capitalize">pagos</h5>
+              
+              <div class="row">
+                <div class="col-6">
+                  
+                  <div class="mb-3">
+                    <label for="firstName">total</label>
+                    <input type="text" class="form-control 1 input_cm_total" placeholder="" value="" required="" data-toggle="tooltip" data-placement="top" title=" = importe">
+                    <div class="invalid-feedback">Total Unico.</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="firstName">pagos</label>
+                    <input type="text" class="form-control 1 input_cm_pagos" placeholder="" value="" required="">
+                    <div class="invalid-feedback">Pago Unico.</div>
+                  </div>
+
+                </div>
+                <div class="col-6">
+                  <div class="mb-3">
+                    <label for="firstName">saldo</label>
+                    <input type="text" class="form-control 1 input_cm_saldo" placeholder="" value="" required="" data-toggle="tooltip" data-placement="top" title="saldo actual + total - pago">
+                    <div class="invalid-feedback">Saldo Unico.</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="firstName">observaciones</label>
+                    <textarea name="textarea" rows="2" cols="50" class="form-control 1 input_cs_observaciones" data-placement="top" title=""></textarea>
+                    <div class="invalid-feedback">Saldo Unico.</div>
+                  </div>  
+                </div>
+              </div>
+                            
+            </div>
+            <!--End:-->
+        </div>
+        <!-- End: cierres no' + x + '-->
+        </div>
+
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar Entrega</button>
+        <button type="button" class="btn btn-primary" id="btnGenerarEntregaMultiple">Generar Entrega</button>
+      </div>
+
     </div>
   </div>
 </div>
@@ -254,323 +610,6 @@
       <div class="modal-footer">
       <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar Entrega</button>
         <button type="button" class="btn btn-primary" id="btnGenerarEntregaUnica">Generar Entrega</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal Cierre multiple con entrega previa-->
-<div class="modal fade" id="entregasMultipleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      
-      <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">Generar Entrega $ <span class="saldoActual">loading</span> </h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-
-      <div class="modal-body">
-        <input type="text" id="cierreEntrega" class="" disabled hidden>
-
-        <div class="row ge-show-load2">
-              <div class="col-12 d-flex align-items-center">
-              <strong>Loading...</strong>
-              <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
-              </div>
-        </div>
-
-        <div class="row">
-              <div class="col-12 ge-show2 d-none mb-2">
-                  <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item active d-flex justify-content-between align-items-center flex-fill  text-uppercase font-weight-light">ID Cierre<span id="metales_id"    class="font-weight-bold">000   </span><input type="hidden" id="input_id_advance" disabled></li>
-                    <li class="list-group-item active d-flex justify-content-between align-items-center flex-fill  text-uppercase font-weight-light">Tipo     <span id="metalesAccion" class="font-weight-bold">000  </span></li>
-                    <li class="list-group-item active d-flex justify-content-between align-items-center flex-fill  text-uppercase font-weight-light">Fecha    <span id="metalesFecha"  class="font-weight-bold">000 </span></li>
-                  </ul> 
-              </div>
-
-              <div class="col-4 ge-show2 d-none">
-                <ul class="list-group">
-                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Precio                       <span id="metales_precio"  class="font-weight-bold">000 </span></li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Metal                        <span id="metalesTipo"     class="font-weight-bold">000 </span></li>                  
-                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Status                       <span id="metalesStatus"   class="font-weight-bold">000 </span></li>
-                </ul>   
-
-                <label for="firstName">No. Vale</label>
-                <input type="text" class="form-control" id="save_cierredos" placeholder="" value="" required="" disabled="">
-          
-            
-              </div>
-
-              <div class="col-4 ge-show2 d-none">
-                <ul class="list-group">
-                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Peso Original                <span id="metales_peso"  class="font-weight-bold">000        </span></li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Saldo  Original              <span id="metales_saldo" class="font-weight-bold">000       </span></li>                
-                </ul>            
-              </div>  
-
-              <div class="col-4 ge-show2 d-none">
-                <ul class="list-group">
-                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Peso  Actual                 <span id="metales_peso_actual"  class="font-weight-bold">000 </span></li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Saldo Actual                 <span id="metales_saldo_actual" class="font-weight-bold">000       </span></li>                
-                </ul>            
-              </div>  
-
-            </div>
-            
-            
-
-        <div class="row mb-5" id="cmPlus"><div class="col-12 text-right text-primary text-4xl"><i class="bi bi-plus-circle-fill" id="plusEntrega"></i></div></div>
-
-        <div class="row" id="multiEntregas">
-
-        <div class="col-12 rowEntrada ' + x + '">
-        <!-- Begin: cierres no ' + x + '-->
-        <div class="cmItem row col-10 offset-1 shadow-lg p-3 mb-5 bg-body rounded">
-            <!--Begin:-->
-            <div class="col-6">
-                <div class="mb-3">
-                  <label for="firstName">Antes de Fundir</label>
-                  <input type="text" class="form-control input_emAntesf" placeholder="" value="0" required="">
-                  <div class="invalid-feedback">Antes de Fundir</div>
-                </div>
-                <div class="mb-3">
-                  <label for="firstName">Grs.</label>
-                  <input type="text" class="form-control input_emGrs"    placeholder="" value="0" required="">
-                  <div class="invalid-feedback">Grs.</div>
-                </div>              
-            </div>
-            <div class="col-6">
-                <div class="mb-3">
-                  <label for="firstName">Ley</label>
-                  <input type="text" class="form-control input_emLey"    placeholder="" value="0" required="" data-toggle="tooltip" data-placement="top" title="precio * Fino/Pza">
-                  <div class="invalid-feedback">Ley</div>
-                </div>
-                <div class="mb-3">
-                  <label for="firstName">Finos</label>
-                  <input type="text" class="form-control input_emFinos"  placeholder="" value="0" required="" data-toggle="tooltip" data-placement="top" title="precio * Fino/Pza">
-                  <div class="invalid-feedback">Finos</div>
-                </div>
-            </div>
-            <!--End:-->
-        </div>
-        <!-- End: cierres no' + x + '-->
-        </div>
-
-        </div>
-
-      </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar Entrega</button>
-        <button type="button" class="btn btn-primary" id="btnGenerarEntregaMultiple">Generar Entrega</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal Cierre Simple con un cierre previo-->
-<div class="modal fade" id="cierreSimple" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-md">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">cierre simple</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      </div>
-
-      <div class="modal-body">
-
-        <!-- entregas -->
-        <div class="row bg-white">
-
-          <div class="col-12" >
-            <h5 class="text-capitalize">cierres</h5>
-
-              <div class="mb-3">
-                  <label for="firstName">No vale actual</label>
-                  <input type="text"id="save_vale_cs" value="0" disabled>
-                </div>
-
-                <div class="mb-3">
-                  <label for="firstName">Fino/Pza</label>
-                  <input type="text" class="form-control" id="input_cs_fino" placeholder="" value="" required="">
-                  <div class="invalid-feedback">Fino/Pza</div>
-                </div>
-                <div class="mb-3">
-                  <label for="firstName">Precio</label>
-                  <input type="text" class="form-control" id="input_cs_precio" placeholder="" value="" required="">
-                  <div class="invalid-feedback">Precio</div>
-                </div>                
-                <div class="mb-3">
-                  <label for="firstName">Importe</label>
-                  <input type="text" class="form-control" id="input_cs_importe" placeholder="" value="" required="" disabled>
-                  <div class="invalid-feedback">Importe</div>
-                </div>             
-          </div>
-            
-          <div class="col-12" >
-            <h5 class="text-capitalize">pagos</h5>
-
-            <div class="mb-3">
-                <label for="firstName">total</label>
-                <input type="text" class="form-control" id="input_cs_total" placeholder="" value="" required="" data-toggle="tooltip" data-placement="top" title=" = importe">
-                <div class="invalid-feedback">Total Unico.</div>
-              </div>
-
-              <div class="mb-3">
-                <label for="firstName">pagos</label>
-                <input type="text" class="form-control" id="input_cs_pagos" placeholder="" value="" required="">
-                <div class="invalid-feedback">Pago Unico.</div>
-              </div>
-
-              <div class="mb-3">
-                <label for="firstName">saldo</label>
-                <input type="text" class="form-control" id="input_cs_saldo" placeholder="" value="" required="" data-toggle="tooltip" data-placement="top" title="saldo actual + total - pago" disabled>
-                <div class="invalid-feedback">Saldo Unico.</div>
-              </div>
-              
-              <div class="mb-3">
-                <label for="firstName">observaciones</label>
-                <textarea name="textarea" rows="10" cols="50" class="form-control" id="input_cs_observaciones" data-placement="top" title=""></textarea>
-                <div class="invalid-feedback">Saldo Unico.</div>
-              </div>      
-
-              
-          </div>
-      
-        </div>
-      
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
-        <button type="button" class="btn btn-primary" id="btnSaveCierreS">guardar cierre simple</button>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-<!-- Modal Generar Entrega primero selecion un cierre para generar una entrega-->
-<div class="modal fade" id="entregaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Generar Entrega</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <input type="text" id="cierreEntrega" class="" disabled hidden>
-
-        <div class="row">
-          <div class="col-12 shadow-sm p-3 mb-5 bg-white rounded">
-
-            <div class="row ge-show-load">
-              <div class="col-12 d-flex align-items-center">
-              <strong>Loading...</strong>
-              <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-12 ge-show d-none mb-2">
-                  <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item active d-flex justify-content-between align-items-center flex-fill  text-uppercase font-weight-light">ID Cierre<span id="metales_id"    class="font-weight-bold">000   </span><input type="hidden" id="input_id_advance" disabled></li>
-                    <li class="list-group-item active d-flex justify-content-between align-items-center flex-fill  text-uppercase font-weight-light">Tipo     <span id="metalesAccion" class="font-weight-bold">000  </span></li>
-                    <li class="list-group-item active d-flex justify-content-between align-items-center flex-fill  text-uppercase font-weight-light">Fecha    <span id="metalesFecha"  class="font-weight-bold">000 </span></li>
-                  </ul> 
-              </div>
-
-              <div class="col-4 ge-show d-none">
-                <ul class="list-group">
-                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Precio                       <span id="metales_precio"  class="font-weight-bold">000 </span></li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Metal                        <span id="metalesTipo"     class="font-weight-bold">000 </span></li>                  
-                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Status                       <span id="metalesStatus"   class="font-weight-bold">000 </span></li>
-                </ul>   
-
-                <label for="firstName">No. Vale</label>
-                <input type="text" class="form-control" id="input_emnvaleE1" placeholder="" value="" required="" disabled="">
-          
-            
-              </div>
-
-              <div class="col-4 ge-show d-none">
-                <ul class="list-group">
-                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Peso Original                <span id="metales_peso"  class="font-weight-bold">000        </span></li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Saldo  Original              <span id="metales_saldo" class="font-weight-bold">000       </span></li>                
-                </ul>            
-              </div>  
-
-              <div class="col-4 ge-show d-none">
-                <ul class="list-group">
-                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Peso  Actual                 <span id="metales_peso_actual"  class="font-weight-bold">000 </span></li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-light">Saldo Actual                 <span id="metales_saldo_actual" class="font-weight-bold">000       </span></li>                
-                </ul>            
-              </div>  
-
-            </div>
-
-
-          </div>
-        </div>   
-
-        <!-- entregas -->
-        <div class="row bg-white">
-            <div class="col-12" ><h5 class="text-capitalize">entregas</h5></div>
-            <div class="col-5 offset-1">
-
-
-              <div class="mb-3">
-                <label for="firstName">No. Ext</label>
-                <input type="text" class="form-control" id="input_nolext" placeholder="" value="0" required="">
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <label for="firstName">Grs a/f</label>
-                <input type="text" class="form-control" id="input_grsaf" placeholder="" value="0" required="">
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
-              </div>
-              
-            </div>
-
-            <div class="col-5">
-
-                <div class="mb-3">
-                  <label for="firstName">Barra</label>
-                  <input type="text" class="form-control" id="input_barra" placeholder="" value="" required="">
-                  <div class="invalid-feedback">Valid first name is required.</div>
-                </div>
-
-                <div class="mb-3">
-                  <label for="firstName">Ley</label>
-                  <input type="text" class="form-control" id="input_ley" placeholder="" value="" required="">
-                  <div class="invalid-feedback">Valid first name is required.</div>
-                </div>
-
-                <div class="mb-3">
-                  <label for="firstName">Fino</label>
-                  <input type="text" class="form-control" id="input_fino" placeholder="" value="" required="" disabled data-toggle="tooltip" data-placement="top" title="barra*ley/24">
-                  <div class="invalid-feedback">Valid first name is required.</div>
-                </div>
-
-            </div>
-
-        </div>
-
-      </div>
-      <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar Entrega</button>
-        <button type="button" class="btn btn-primary" id="btnGenerarEntrega">Generar Entrega</button>
       </div>
     </div>
   </div>

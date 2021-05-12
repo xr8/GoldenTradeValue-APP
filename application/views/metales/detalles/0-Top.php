@@ -12,8 +12,10 @@
       <!-- CRUD -->
       <button type="button" class="btn btn-success"   id="btnModalSaldo"           data-toggle="modal" data-target="#saldoModal"                    >saldo base   </button>      
       <button type="button" class="btn btn-success"   id="btnModalCierre"          data-toggle="modal" data-target="#cierreModal"                   >generar cierre</button>
+      <button type="button" class="btn btn-warning" id="btnModalEntrega"         data-toggle="modal" data-target="#entregaModal"          disabled>entrega nueva</button>
+
       <button type="button" class="btn btn-secondary" id="btnModalCierreSimple"    data-toggle="modal" data-target="#cierreSimple"          disabled>cierre simple</button>      
-      <button type="button" class="btn btn-secondary" id="btnModalEntrega"         data-toggle="modal" data-target="#entregaModal"          disabled>entrega nueva</button>
+      
       <button type="button" class="btn btn-secondary" id="btnModalCierreDos"       data-toggle="modal" data-target="#entregasMultipleModal" disabled>cierre</button>
 
     </div>
