@@ -12,7 +12,7 @@
     </h6>
   </div>    
     
-  <div class="col-3 offset-9">
+  <div class="col-4 offset-8">
     <div class="btn-group btn-group-sm" role="group" aria-label="...">
       <div class="btn-group mr-2" role="group" aria-label="First group">
         <button type="button" class="btn btn-primary text-capitalize" id="btnModalCierre" data-toggle="modal" data-target="#cierreModal">cierres</button>

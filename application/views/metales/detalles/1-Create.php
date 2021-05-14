@@ -92,7 +92,7 @@
 
                   <div class="form-group">
                       <label for="FormControlPrecio">total</label>
-                      <input type="text" class="form-control"         id="generarPagoTotal"   aria-describedby="FormControlPrecio" placehBuscarolder="Precio">
+                      <input type="text" class="form-control"         id="generarPagoTotal"   aria-describedby="FormControlPrecio" placehBuscarolder="Precio" value="0.00" disabled>
                       <small             class="form-text text-muted" id="FormControlPrecioHelp" >total</small>
                   </div>
                   <div class="form-group">
@@ -111,7 +111,7 @@
                   </div>                      
                   <div class="form-group">
                       <label for="FormControlPrecio">saldo</label>
-                      <input type="text" class="form-control"         id="generarSaldo"   aria-describedby="FormControlPrecio" placehBuscarolder="Precio">
+                      <input type="text" class="form-control"         id="generarSaldo"   aria-describedby="FormControlPrecio" placehBuscarolder="Precio" disabled>
                       <small             class="form-text text-muted" id="FormControlPrecioHelp" >saldo</small>
                   </div>
                   <div class="form-group">
