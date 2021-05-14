@@ -1,26 +1,31 @@
-
-
-<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-  <h4 class="">Compra de Metales</h4>
-  </br>
-  <h4 id="xhrCliente">cliente</h4>
-  <h4 id="xhrSaldotxt">$<span id="xhrSaldo">saldo</span></h4>
-  <input type="hidden" value="<?php echo $_GET['id'];?>" id="id_advance_x" disabled>
-
-  <div class="btn-toolbar mb-2 mb-md-0">
-    <div class="btn-group mr-2">
-      <!-- CRUD -->
-      <button type="button" class="btn btn-success"   id="btnModalSaldo"           data-toggle="modal" data-target="#saldoModal"                    >saldo base   </button>      
-      <button type="button" class="btn btn-success"   id="btnModalCierre"          data-toggle="modal" data-target="#cierreModal"                   >generar cierre</button>
-      <button type="button" class="btn btn-warning" id="btnModalEntrega"         data-toggle="modal" data-target="#entregaModal"          disabled>entrega nueva</button>
-
-      <button type="button" class="btn btn-secondary" id="btnModalCierreSimple"    data-toggle="modal" data-target="#cierreSimple"          disabled>cierre simple</button>      
-      
-      <button type="button" class="btn btn-secondary" id="btnModalCierreDos"       data-toggle="modal" data-target="#entregasMultipleModal" disabled>cierre</button>
-
+<div class="row">
+  
+  <div class="col-12">
+    <h4 class="">Compra de Metales</h4>
+  </div>
+  
+  <div class="col-12 text-right">
+    <h6>
+      <span class="text-capitalize font-weight-lighter"><ins><span id="xhrCliente">cliente</span></ins></span>
+      <span id="xhrSaldotxt" class="text-capitalize font-weight-bold    ">$<span id="xhrSaldo">saldo</span></span>
+      <input type="hidden" value="<?php echo $_GET['id'];?>" id="id_advance_x" disabled>
+    </h6>
+  </div>    
+    
+  <div class="col-3 offset-9">
+    <div class="btn-group btn-group-sm" role="group" aria-label="...">
+      <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button type="button" class="btn btn-primary text-capitalize" id="btnModalCierre" data-toggle="modal" data-target="#cierreModal">cierres</button>
+        <button type="button" class="btn btn-primary text-capitalize">entregas</button>
+        <button type="button" class="btn btn-primary text-capitalize">cierres</button>
+        <button type="button" class="btn btn-success text-capitalize" id="btnModalPagos" data-toggle="modal" data-target="#pagosModal">pagos</button>
+      </div>
     </div>
   </div>
+
+
 </div>
+
 <div cass="col-12 text-left  pt-3 pb-2 mb-3 ">
 <!--<h3>Norma Hernandez</h3>-->
 </div>
