@@ -5,18 +5,18 @@
 
             <div class="col-12">
 
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <ul class="nav nav-tabs text-capitalize" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link active" id="cierres-tab" data-toggle="tab" href="#cierres" role="tab" aria-controls=cierres" aria-selected="true">Cierres</a>
+                        <a class="nav-link active" id="cierres-tab" data-toggle="tab" href="#cierres" role="tab" aria-controls=cierres" aria-selected="true">cierre</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="entregas-tab" data-toggle="tab" href="#entregas" role="tab" aria-controls="entregas" aria-selected="false">Entregas</a>
+                        <a class="nav-link" id="entregas-tab" data-toggle="tab" href="#entregas" role="tab" aria-controls="entregas" aria-selected="false">entregas</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="cierres2-tab" data-toggle="tab" href="#cierres2" role="tab" aria-controls="cierres2" aria-selected="false">Cierres Dos</a>
+                        <a class="nav-link" id="cierres2-tab" data-toggle="tab" href="#cierres2" role="tab" aria-controls="cierres2" aria-selected="false">cierres</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pagos-tab" data-toggle="tab" href="#pagos" role="tab" aria-controls="pagos" aria-selected="false">Pagos</a>
+                        <a class="nav-link" id="pagos-tab" data-toggle="tab" href="#pagos" role="tab" aria-controls="pagos" aria-selected="false">pagos</a>
                     </li>
                 </ul>
             

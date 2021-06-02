@@ -15,10 +15,10 @@
   <div class="col-4 offset-8">
     <div class="btn-group btn-group-sm" role="group" aria-label="...">
       <div class="btn-group mr-2" role="group" aria-label="First group">
-        <button type="button" class="btn btn-primary text-capitalize" id="btnModalCierre"  data-toggle="modal" data-target="#cierreModal">cierres</button>
+        <button type="button" class="btn btn-primary text-capitalize" id="btnModalCierre"  data-toggle="modal" data-target="#cierreModal" >cierre</button>
         <button type="button" class="btn btn-primary text-capitalize" id="btnModalEntrega" data-toggle="modal" data-target="#entregaModal">entregas</button>
-        <button type="button" class="btn btn-primary text-capitalize">cierres</button>
-        <button type="button" class="btn btn-success text-capitalize" id="btnModalPagos"   data-toggle="modal" data-target="#pagosModal">pagos</button>
+        <button type="button" class="btn btn-primary text-capitalize" id="btnModalCierres" data-toggle="modal" data-target="#cierresModal" disabled>cierres</button>
+        <button type="button" class="btn btn-success text-capitalize" id="btnModalPagos"   data-toggle="modal" data-target="#pagosModal"  >pagos</button>
       </div>
     </div>
   </div>

@@ -148,6 +148,116 @@
     </div>
   </div>
 
+  <!-- Modal Cierres-->
+  <div class="modal fade" id="cierresModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Generar Cierres</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <form>
+            
+              <div class="container">
+                  <div class="row">
+                    
+                    <div class="col">
+                      <p>Paso 1</p>
+                      <div class="p-3 mb-2 bg-primary text-white font-weight-bolder text-center">
+                      <p><span id="cierresTxt">00.00 Grs</span></p>
+                      <input type="text" id="cierre_id_advance" disabled>
+                      <input type="text" id="cierres_id_advance" disabled>
+                      </div>
+                      
+                    </div>
+
+                    <div class="col">
+                      <p>Paso 2</p>
+
+                        <div class="d-none loading-origen-x spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div>
+
+                        <div class="loading-origen form-group">
+                            <label for="detail_tipo">Origen</label>
+                            <select class="form-control" id="cierres_origen">
+                                <option value="null"   > - Opciones -</option>
+                                <option value="cierre" > cierre</option>
+                            </select>
+                            <small id="detail_tipoHelp" class="form-text text-muted">Tipo de transacción.</small>
+                        </div> 
+
+                        <div class="loading-origen form-group"         id="cierresGrs">
+                          <select class="form-control"  id="cierres_origen_grs">
+                            <option value="null"   > - Opciones -</option>
+                          </select>                        
+                        </div> 
+
+                    </div>
+
+                    <div class="col">
+                      <p>Paso 3</p>
+
+                      <div class="form-group">
+                          <label for="FormControlPrecio">fino/pza</label>
+                          <input type="text" class="form-control" id="generar_fino_pza" aria-describedby="FormControlPrecio" placehBuscarolder="Precio">
+                          <small id="FormControlPrecioHelp" class="form-text text-muted">fino/pza</small>
+                      </div>
+
+                      <div class="form-group">
+                          <label for="FormControlPrecio">Precio</label>
+                          <input type="text" class="form-control" id="generar_precio" aria-describedby="FormControlPrecio" placehBuscarolder="Precio" disabled>
+                          <small id="FormControlPrecioHelp" class="form-text text-muted">Precio</small>
+                      </div>
+
+                      <div class="form-group">
+                          <label for="FormControlPrecio">importe</label>
+                          <input type="text" class="form-control" id="generar_importe" aria-describedby="FormControlPrecio" placehBuscarolder="Precio" disabled>
+                          <small id="FormControlPrecioHelp" class="form-text text-muted">importe</small>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <p>Paso 4</p>
+
+                      <div class="form-group">
+                          <label for="FormControlPrecio">pagos</label>
+                          <input type="text" class="form-control" id="generar_pagos" aria-describedby="FormControlPrecio" placeholder="Pago">
+                          <small id="FormControlPrecioHelp" class="form-text text-muted">pago</small>
+                      </div>
+
+                      <div class="form-group">
+                        <select name="select" class="form-control" id="generar_TipoPago">
+                          <option name="pago">pago</option>
+                          <option name="anticipo">anticipo</option>
+                          <option name="prestamo">prestamo</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="FormControlPrecio">observaciones</label>
+                        <textarea class="form-control" id="generar_Observaciones" rows="3"></textarea>
+                        <small class="form-text text-muted" id="FormControlPrecioHelp">observaciones</small>
+                    </div>
+
+                    </div>
+                  </div>
+              </div>
+
+            </form>
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar Cierre</button>
+            <button type="button" class="btn btn-primary" id="btnGenerarCierres">Generar Cierre</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Modal Cierres-->
 
   <!-- Modal Pagos-->
     <div class="modal fade" id="pagosModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
