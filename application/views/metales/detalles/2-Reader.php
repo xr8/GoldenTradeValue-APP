@@ -67,7 +67,8 @@
                                         <th scope="col">Grs A/F</th>
                                         <th scope="col">Barra</th>
                                         <th scope="col">Ley</th>
-                                        <th scope="col">Fino</th> 
+                                        <th scope="col">Fino Original</th> 
+                                        <th scope="col">Fino Actual</th> 
                                     </tr>
                                 </thead>
                                 <tbody id="loadingMetalesEntregas"></tbody>

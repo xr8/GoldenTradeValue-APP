@@ -13,14 +13,22 @@
   </div>    
     
   <div class="col-4 offset-8">
-    <div class="btn-group btn-group-sm" role="group" aria-label="...">
-      <div class="btn-group mr-2" role="group" aria-label="First group">
+
+      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
         <button type="button" class="btn btn-primary text-capitalize" id="btnModalCierre"  data-toggle="modal" data-target="#cierreModal" >cierre</button>
         <button type="button" class="btn btn-primary text-capitalize" id="btnModalEntrega" data-toggle="modal" data-target="#entregaModal">entregas</button>
-        <button type="button" class="btn btn-primary text-capitalize" id="btnModalCierres" data-toggle="modal" data-target="#cierresModal" disabled>cierres</button>
+        
+        <div class="btn-group" role="group">
+          <button id="btnMenuCierres" type="button" class="btn btn-primary text-capitalize dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>cierres</button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a id="btnModalCierres" class="dropdown-item text-capitalize checkboxone" href="#" data-toggle="modal" data-target="#cierresModal"         >simple</a>
+            <a id="btnModalCierresMultiple" class="dropdown-item text-capitalize checkboxone" href="#" data-toggle="modal" data-target="#cierresMultipleModal" >multiple</a>
+          </div>
+        </div>        
+        
         <button type="button" class="btn btn-success text-capitalize" id="btnModalPagos"   data-toggle="modal" data-target="#pagosModal"  >pagos</button>
       </div>
-    </div>
+
   </div>
 
 
